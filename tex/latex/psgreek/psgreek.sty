@@ -1,0 +1,140 @@
+%%
+%% This is file `psgreek.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% psgreek.dtx  (with options: `psgreek')
+%% 
+%% This file is part of the PSGREEK project version 0.5
+%% -------------------------------------------------------------
+%% 
+%% It may be distributed under the terms of the LaTeX Project Public
+%% License, as described in lppl.txt in the base LaTeX distribution.
+%% Either version 1.0 or, at your option, any later version.
+%% Copyright (C) 2001 -- 2003 by Alexej Kryukov and Christian Justen.
+%% Please report errors to: A.M. Kryukov <basileia@yandex.ru>
+%% 
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{psgreek}
+    [2003/04/16 Babel support for Greek PostScript fonts]
+\RequirePackage{keyval}
+\@ifundefined{greektext}{%
+        \PackageError{psgreek.sty}%
+            {Sorry, but probably you did not load^^J
+            babel with greek option!}%
+            {The psgreek package requires the
+            babel system to be loaded^^J%
+            either with `greek' or `polutonikogreek' option.}%
+    }{%
+    }
+\newcommand{\DeclareGreekFont}[2]{%
+    \expandafter\def\csname greekfont@#1\endcsname{#2}%
+}
+\newcommand{\check@forgreekfont}[1]{%
+    \@ifundefined{greekfont@#1}{%
+            \PackageError{psgreek.sty}%
+                {Greek font #1 not yet defined!}%
+                {In order to use a Greek font
+                (compatible to the babel system)^^J%
+                you have to declare it using the
+                \string\DeclareGreekFont\space command:^^J%
+                \string\DeclareGreekFont{#1}{nnn}^^J%
+                where nnn specifies the font family.}%
+            \@tempswafalse%
+        }{%
+            \@tempswatrue%
+        }%
+}
+\DeclareGreekFont{regular}{wgr}
+\DeclareGreekFont{garamond}{fgm}
+\DeclareGreekFont{oxonia}{fof}
+\DeclareGreekFont{oldface}{hof}
+\DeclareGreekFont{milan}{hml}
+\DeclareGreekFont{kerkis}{mak}
+\DeclareGreekFont{cmr}{cmr}
+\DeclareGreekFont{cmss}{cmss}
+\DeclareGreekFont{cmtt}{cmtt}
+\let\greek@rmfamily\relax
+\let\greek@sffamily\relax
+\let\greek@ttfamily\relax
+\define@key{psgreek}{rmfont}{%
+    \check@forgreekfont{#1}%
+    \if@tempswa\def\greek@rmfamily{\csname greekfont@#1\endcsname}\fi%
+}
+\define@key{psgreek}{sffont}{%
+    \check@forgreekfont{#1}%
+    \if@tempswa\def\greek@sffamily{\csname greekfont@#1\endcsname}\fi%
+}
+\define@key{psgreek}{ttfont}{%
+    \check@forgreekfont{#1}%
+    \if@tempswa\def\greek@ttfamily{\csname greekfont@#1\endcsname}\fi%
+}
+\newcommand{\greekfont}[2][]{%
+    \def\@temp{#2}%
+    \ifx\@temp\@empty\else\setkeys{psgreek}{rmfont=#2}\fi%
+    \setkeys{psgreek}{#1}%
+}
+\DeclareOption{regular}{\greekfont{regular}}
+\DeclareOption{garamond}{\greekfont{garamond}}
+\DeclareOption{oxonia}{\greekfont{oxonia}}
+\DeclareOption{oldface}{\greekfont{oldface}}
+\DeclareOption{milan}{\greekfont{milan}}
+\DeclareOption{kerkis}{\greekfont{kerkis}}
+\DeclareOption{cmr}{\greekfont{cmr}}
+\DeclareOption{cmss}{\greekfont{cmss}}
+\DeclareOption{cmtt}{\greekfont{cmtt}}
+\DeclareOption*{%
+    \edef\@temp{\noexpand\greekfont[\CurrentOption]{}}%
+    \@temp%
+}
+\greekfont[sffont=cmss,ttfont=cmtt]{regular}
+\ProcessOptions*
+\newenvironment{greek}{\begin{otherlanguage}{greek}}{\end{otherlanguage}}
+\newcommand{\localgreek}[1]{\foreignlanguage{greek}{#1}}
+\let\old@rmdefault\relax
+\let\old@sfdefault\relax
+\let\old@ttdefault\relax
+\let\old@font@family\relax
+\DeclareRobustCommand{\greektext}{%
+  \let\old@font@family\f@family%
+  \let\old@rmdefault\rmdefault%
+  \let\old@sfdefault\sfdefault%
+  \let\old@ttdefault\ttdefault%
+  \fontencoding{LGR}%
+  \edef\@temp{\sfdefault}%
+  \ifx\f@family\@temp%
+    \fontfamily{\greek@sffamily}%
+  \else%
+    \edef\@temp{\ttdefault}%
+    \ifx\f@family\@temp%
+        \fontfamily{\greek@ttfamily}%
+    \else%
+        \fontfamily{\greek@rmfamily}%
+    \fi%
+  \fi%
+  \selectfont%
+  \def\encodingdefault{LGR}%
+  \def\rmdefault{\greek@rmfamily}%
+  \def\sfdefault{\greek@sffamily}%
+  \def\ttdefault{\greek@ttfamily}%
+}
+\DeclareRobustCommand{\latintext}{%
+  \fontencoding{\latinencoding}%
+  \ifx\old@font@family\relax\else\fontfamily{\old@font@family}\fi%
+  \selectfont%
+  \def\encodingdefault{\latinencoding}%
+  \ifx\old@rmdefault\relax\else\let\rmdefault\old@rmdefault\fi%
+  \ifx\old@sfdefault\relax\else\let\sfdefault\old@sfdefault\fi%
+  \ifx\old@ttdefault\relax\else\let\ttdefault\old@ttdefault\fi%
+}
+\addto\noextrasgreek{%
+    \let\old@font@family\relax%
+    \let\old@rmdefault\relax%
+    \let\old@sfdefault\relax%
+    \let\old@ttdefault\relax%
+    }
+\let\noextraspolutonikogreek\noextrasgreek
+\endinput
+%%
+%% End of file `psgreek.sty'.

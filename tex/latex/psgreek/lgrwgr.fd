@@ -1,0 +1,34 @@
+%Filename: lgrwgr.fd
+%Created by: tex wingreek
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{lgrwgr.fd}
+   [2004/04/23 Fontinst v1.926 font definitions for LGR/wgr.]
+
+\DeclareFontFamily{LGR}{wgr}{}
+
+\DeclareFontShape{LGR}{wgr}{m}{n}{
+   <-> wgrrgr
+}{}
+
+\DeclareFontShape{LGR}{wgr}{m}{it}{
+   <-> wgrrgr
+}{}
+
+\DeclareFontShape{LGR}{wgr}{m}{sc}{
+   <-> wgrrcgr
+}{}
+
+\DeclareFontShape{LGR}{wgr}{bx}{n}{<->ssub * wgr/m/n}{}
+\DeclareFontShape{LGR}{wgr}{b}{n}{<->ssub * wgr/bx/n}{}
+\DeclareFontShape{LGR}{wgr}{bx}{it}{<->ssub * wgr/m/it}{}
+\DeclareFontShape{LGR}{wgr}{b}{it}{<->ssub * wgr/bx/it}{}
+\DeclareFontShape{LGR}{wgr}{m}{sl}{<->ssub * wgr/m/it}{}
+\DeclareFontShape{LGR}{wgr}{bx}{sl}{<->ssub * wgr/m/sl}{}
+\DeclareFontShape{LGR}{wgr}{b}{sl}{<->ssub * wgr/bx/sl}{}
+\DeclareFontShape{LGR}{wgr}{bx}{sc}{<->ssub * wgr/m/sc}{}
+\DeclareFontShape{LGR}{wgr}{b}{sc}{<->ssub * wgr/bx/sc}{}
+
+\endinput

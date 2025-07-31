@@ -1,0 +1,34 @@
+%Filename: ut1hof.fd
+%Created by: tex ohancock
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ut1hof.fd}
+   [2004/04/23 Fontinst v1.926 font definitions for UT1/hof.]
+
+\DeclareFontFamily{UT1}{hof}{}
+
+\DeclareFontShape{UT1}{hof}{m}{it}{
+   <-> hofrut
+}{}
+
+\DeclareFontShape{UT1}{hof}{m}{n}{
+   <-> hofrut
+}{}
+
+\DeclareFontShape{UT1}{hof}{m}{sc}{
+   <-> hofrcut
+}{}
+
+\DeclareFontShape{UT1}{hof}{bx}{it}{<->ssub * hof/m/it}{}
+\DeclareFontShape{UT1}{hof}{b}{it}{<->ssub * hof/bx/it}{}
+\DeclareFontShape{UT1}{hof}{m}{sl}{<->ssub * hof/m/it}{}
+\DeclareFontShape{UT1}{hof}{bx}{sl}{<->ssub * hof/m/sl}{}
+\DeclareFontShape{UT1}{hof}{b}{sl}{<->ssub * hof/bx/sl}{}
+\DeclareFontShape{UT1}{hof}{bx}{n}{<->ssub * hof/m/n}{}
+\DeclareFontShape{UT1}{hof}{b}{n}{<->ssub * hof/bx/n}{}
+\DeclareFontShape{UT1}{hof}{bx}{sc}{<->ssub * hof/m/sc}{}
+\DeclareFontShape{UT1}{hof}{b}{sc}{<->ssub * hof/bx/sc}{}
+
+\endinput

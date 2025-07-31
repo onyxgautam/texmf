@@ -1,0 +1,7 @@
+* My texmf files
+Here are all the user packages and configurations I use in my =texmf= folder. It
+complies with the standard folder structure. Feel free to use whatever nuggets
+you find useful.
+
+A useful file in here is my style for notes [[https://github.com/gcman/texmf/blob/master/tex/latex/local/og-notes.org][og-notes]], inspired
+by =tufte-latex=.

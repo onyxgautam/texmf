@@ -1,0 +1,35 @@
+\RequirePackage[T1]{fontenc}
+\RequirePackage{amsmath, amssymb}
+\RequirePackage{calc}
+\RequirePackage{ifthen}
+\RequirePackage{titlesec}
+\RequirePackage{enumitem}
+\RequirePackage{hyperref}
+
+\def \address #1{\def\@address{#1}}
+\def \@address {Address}
+
+\renewcommand*{\maketitle}{%
+  \vspace*{-5ex}
+  \begin{center}
+    {\bfseries\huge\MakeUppercase{\@author}}\\
+    \vspace{0.75ex}
+    \@address
+  \end{center}
+}
+
+\titleformat{\section}{\normalfont\normalsize\bfseries}{}{0em}{\MakeUppercase}[\titlerule]
+
+\newenvironment{experience}[3]{\textbf{#1}\hfill{#2}\ifthenelse{\equal{#3}{}}{}{\newline\textit{#3}}\newline}{\vspace*{7pt}}
+
+\newenvironment{paper}[3]{\textbf{#1} (#2)\ifthenelse{\equal{#3}{}}{}{\newline#3}}{\vspace*{7pt}}
+
+\newenvironment{education}[4]{\textbf{#1},
+  #2\hfill{#3}\ifthenelse{\equal{#4}{}}{}{\newline\textit{#3}}}{\vspace*{5pt}}
+
+\newcommand{\talk}[4]{\textbf{#1}\hfill{#2}\\\textit{#3}\newline#4\\\vspace*{7pt}}
+
+\setitemize{itemsep=0.25em,topsep=-1em,parsep=0pt,partopsep=0pt}
+
+\pagestyle{empty}
+\raggedright

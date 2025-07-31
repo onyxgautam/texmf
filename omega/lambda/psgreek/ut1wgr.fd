@@ -1,0 +1,34 @@
+%Filename: ut1wgr.fd
+%Created by: tex owingreek
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ut1wgr.fd}
+   [2004/04/23 Fontinst v1.926 font definitions for UT1/wgr.]
+
+\DeclareFontFamily{UT1}{wgr}{}
+
+\DeclareFontShape{UT1}{wgr}{m}{n}{
+   <-> wgrrut
+}{}
+
+\DeclareFontShape{UT1}{wgr}{m}{it}{
+   <-> wgrrut
+}{}
+
+\DeclareFontShape{UT1}{wgr}{m}{sc}{
+   <-> wgrrcut
+}{}
+
+\DeclareFontShape{UT1}{wgr}{bx}{n}{<->ssub * wgr/m/n}{}
+\DeclareFontShape{UT1}{wgr}{b}{n}{<->ssub * wgr/bx/n}{}
+\DeclareFontShape{UT1}{wgr}{bx}{it}{<->ssub * wgr/m/it}{}
+\DeclareFontShape{UT1}{wgr}{b}{it}{<->ssub * wgr/bx/it}{}
+\DeclareFontShape{UT1}{wgr}{m}{sl}{<->ssub * wgr/m/it}{}
+\DeclareFontShape{UT1}{wgr}{bx}{sl}{<->ssub * wgr/m/sl}{}
+\DeclareFontShape{UT1}{wgr}{b}{sl}{<->ssub * wgr/bx/sl}{}
+\DeclareFontShape{UT1}{wgr}{bx}{sc}{<->ssub * wgr/m/sc}{}
+\DeclareFontShape{UT1}{wgr}{b}{sc}{<->ssub * wgr/bx/sc}{}
+
+\endinput

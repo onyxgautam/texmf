@@ -1,0 +1,54 @@
+\ProvidesPackage{og-amsart}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hidelinks=true, pdfencoding=auto, psdextra]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linktoc=page,
+  linkcolor=BrickRed,
+  citecolor=ForestGreen,
+  urlcolor=BrickRed,
+}
+
+\usepackage{cleveref}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\declaretheorem[numberwithin=section]{theorem}
+\declaretheorem[sibling=theorem]{lemma, proposition, corollary, claim, goal, conjecture}
+\declaretheorem[style=definition, sibling=theorem]{definition}
+\declaretheorem[style=definition, numbered=no]{notation}
+\declaretheorem[style=remark, sibling=theorem]{remark}
+\declaretheorem[style=remark, sibling=theorem, name={Example}]{ex}
+\newcommand{\marginnote}{\footnote}
+\newcommand{\sidenote}{\footnote}
+% \usepackage{etoolbox}
+% \makeatletter
+% \patchcmd{\@maketitle}{\global\topskip42\p@\relax}
+%   {\global\topskip42\p@\relax \vspace*{-1ex}}
+%   {}{}
+% \makeatother
+\usepackage[backend=biber, style=alphabetic]{biblatex}
+
+\usepackage{enumitem}
+\setlist[enumerate,1]{font=\upshape, label={(\roman*)}}
+
+\crefformat{enumi}{#2\textup{#1}#3}
+\crefrangeformat{enumi}{#3\textup{#1}#4--#5\textup{#2}#6}
+\crefname{equation}{}{}
+\crefrangeformat{equation}{(#3#1#4)--(#5#2#6)}
+
+\newcommand{\creflastconjunction}{, and\nobreakspace}
+
+\newcommand{\step}[1]{\smallskip\noindent\emph{#1}}
+\pagestyle{plain}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{makecell}
+\usepackage{subcaption}
+\newcommand{\incfig}[2]{%
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex}
+}

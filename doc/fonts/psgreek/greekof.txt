@@ -1,0 +1,95 @@
+GREEK OLD FACE AND GREEK OLD FACE C FONTS
+
+These fonts have the character set of the Greek font supplied with the
+wgreek19.zip shareware for Windows, with the additions listed below. Only the
+Type 1 version of the font has the characters with codes below 32; all these
+characters are printable in Word for Windows and many other Windows
+applications. TrueType fonts can't display characters under 32.
+
+Greek Old Face, for the Anglophone market, has:
+c-shaped epsilon
+closed theta
+straight kappa
+straight rho
+tall phi
+
+Greek Old Face C, for the Continental market, has:
+8-shaped epsilon
+open theta
+x-shaped kappa
+curly rho
+low-topped phi
+
+In each font, the national set that is not used may be found on the codes
+below 32.
+
+1 C-shaped capital Sigma
+2 other epsilon
+3 other theta
+4 other kappa
+5 other rho
+6 other phi
+7 modern Greek left double quote
+8-9 [unprintable in Windows]
+10 half space
+11-14 [unprintable]
+15 other epsilon asper
+16 other epsilon lenis
+17 other epsilon acute
+18 other epsilon asper acute
+19 other epsilon lenis acute
+20 other epsilon grave
+21 other epsilon asper grave
+22 other epsilon lenis grave
+23 other epsilon circumflex [included for compatibility with WinGreek]
+24 other rho asper
+25 other rho lenis
+26 breve
+27 macron
+28 left single quote
+29 right single quote
+30-31 [unprintable]
+32-126 [as WinGreek, but the useless <> signs have been styled as corner
+    brackets]
+127 [unprintable]
+128 left double quote
+129 right double quote
+130 exclamation mark
+131-251 [as WinGreek, but the unprintable character 160 is blank; see 254]
+252 epsilon circumflex [added to later versions of WinGreek - why?]
+253 omicron circumflex [ditto]
+254 diaeresis grave [some versions of the WinGreek font had this on 160,
+    which is unprintable]
+255 low prime [for numerals]
+
+Kerning: all unaccented lower case letters are kerned relative to each other,
+so that numerals can be printed properly. Otherwise, only pairs that actually
+occur in classical Greek are kerned. Word for Windows cannot use kerning in
+TrueType fonts that do not have standard encoding - as the Greek fonts do
+not. The fonts are designed to look OK without kerning, though obviously
+kerning improves letter spacing.
+
+
+THESE FONTS ARE SHAREWARE
+
+They took a lot of work to design, and I would be touchingly grateful if you
+could see your way to paying a small fee for them. So please send a cheque
+for $20 or equivalent in other currency (or œ10 sterling) to:
+
+Ralph Hancock
+17 Queen's Gate Place
+London SW7 5NY
+United Kingdom
+
+tel & fax +44171 584 2457
+e-mail rhancock@dircon.co.uk
+
+Please get in touch if you want a different version of the font. I will
+recode it, free, to any coding you like - as long as you tell me EXACTLY what
+character set you want. Mac versions can also be done, but some discussion
+will be necessary about the character set. Note that this is a Greek-only
+font, so I can't make up a roman-and-Greek character set like the Windows
+modern Greek one.
+
+By all means pass the font on to other people but, if you do, be sure to
+include this note with it.

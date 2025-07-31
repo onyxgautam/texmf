@@ -1,0 +1,34 @@
+%Filename: ut1fof.fd
+%Created by: tex opublic
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ut1fof.fd}
+   [2004/04/23 Fontinst v1.926 font definitions for UT1/fof.]
+
+\DeclareFontFamily{UT1}{fof}{}
+
+\DeclareFontShape{UT1}{fof}{m}{it}{
+   <-> fofriut
+}{}
+
+\DeclareFontShape{UT1}{fof}{m}{n}{
+   <-> fofriut
+}{}
+
+\DeclareFontShape{UT1}{fof}{m}{sc}{
+   <-> fofrcut
+}{}
+
+\DeclareFontShape{UT1}{fof}{bx}{it}{<->ssub * fof/m/it}{}
+\DeclareFontShape{UT1}{fof}{b}{it}{<->ssub * fof/bx/it}{}
+\DeclareFontShape{UT1}{fof}{m}{sl}{<->ssub * fof/m/it}{}
+\DeclareFontShape{UT1}{fof}{bx}{sl}{<->ssub * fof/m/sl}{}
+\DeclareFontShape{UT1}{fof}{b}{sl}{<->ssub * fof/bx/sl}{}
+\DeclareFontShape{UT1}{fof}{bx}{n}{<->ssub * fof/m/n}{}
+\DeclareFontShape{UT1}{fof}{b}{n}{<->ssub * fof/bx/n}{}
+\DeclareFontShape{UT1}{fof}{bx}{sc}{<->ssub * fof/m/sc}{}
+\DeclareFontShape{UT1}{fof}{b}{sc}{<->ssub * fof/bx/sc}{}
+
+\endinput

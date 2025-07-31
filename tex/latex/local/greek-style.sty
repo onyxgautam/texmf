@@ -1,0 +1,143 @@
+\ProvidesPackage{greek-style}
+
+\usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage[inline]{enumitem}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tablefootnote}
+\usepackage{etoolbox}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage{xparse}
+\usepackage{changepage}
+\usepackage{import}
+\usepackage{suffix}
+\usepackage{newfile}
+\usepackage{pdfpages}
+\usepackage{newunicodechar}
+
+\usepackage[noeledsec,series={A,B}]{reledmac}
+\Xlemmaseparator{}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\usepackage{fontspec}
+\setmainfont[%
+BoldFont={* Bold},
+BoldItalicFont={* Bold Italic},
+Ligatures=TeX,
+Numbers=OldStyle
+]{TeX Gyre Pagella}
+
+\setotherlanguage[variant=polytonic]{greek}
+\newfontfamily{\greekfont}[Mapping=asciitogreek]{GFS Porson-Regular}
+\newfontfamily\digammafont{Libertinus Serif}
+\newunicodechar{ϝ}{{\digammafont\itshape ϝ}}
+\newunicodechar{Ϝ}{{\digammafont Ϝ}}
+
+\usepackage{setspace}
+
+\counterwithout{section}{chapter}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\usepackage[top=1in, bottom=1.25in, left=1.5in, right=1.5in]{geometry}
+
+\crefformat{section}{§#2#1#3}
+\crefname{section}{§}{§§}
+\Crefname{section}{§}{§§}
+
+\titleformat{\chapter}[display]
+{\centering\huge\normalfont\bfseries}{\addfontfeatures{LetterSpace=10.0}{LESSON \thechapter}}{0pt}{\vskip 10pt\raggedright}
+
+\titleformat{\section}{\raggedright\normalfont\large}{\S\thesection.}{0.5em}{}
+\titleformat{\subsection}[runin]{\raggedright\normalfont\itshape}{\S\thesection.\arabic{subsection}}{0.5em}{}
+
+\titlespacing{\chapter}{0pt}{-10pt}{0pt}
+\titlespacing*\section{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{4pt}{8pt}
+
+\newcommand{\vocab}[1]{\textbf{#1}}
+\newcommand{\bc}{\textsc{bc}}
+\newcommand{\ad}{\textsc{ad}}
+
+\begingroup\lccode`?=`~
+\lowercase{\endgroup\def\gktilde{\def~{?}}}
+\protected\def\gk{\begingroup\gktilde\dogk}
+\newcommand{\dogk}[1]{\textgreek[variant=ancient]{#1}\endgroup}
+
+\WithSuffix\newcommand\gk*{\gk}
+
+\newcounter{word}
+\makeatletter
+\newcommand*{\LBL}{%
+  \@dblarg\@LBL
+}
+\def\@LBL[#1]#2{%
+	\begingroup
+		\renewcommand*{\theword}{#2}%
+		\refstepcounter{word}%
+		\label{#1}%
+		#2%
+		\addtostream{pages}{#1, \thepage}
+	\endgroup
+}
+\makeatother
+
+\newcommand{\exc}[1]{%
+\begin{center}
+	\textsc{the exercises in \cref{#1} may now be done.}
+\end{center}}
+
+\newcommand{\note}{$\Rightarrow$}
+\newcommand{\modal}{(\textsc{{M}})}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\arraybackslash}X}
+\newcolumntype{P}{>{\raggedright\arraybackslash\hangpar{0.5em}{1}}X}
+
+\NewDocumentEnvironment{gtab}{O{0.8\linewidth}O{PP}}{%
+			\table[!htbp]
+			\centering
+			\tabularx{#1}{#2}}
+			{\endtabularx\endtable}
+
+\newenvironment{First}[1][1cm]
+{\hspace{#1}\ignorespaces}
+{}
+\newenvironment{Complement}[1][1cm]
+{\hspace{#1}\begin{minipage}{\linewidth-#1}\hspace{-#1}\ignorespaces}
+	{\end{minipage}}
+
+\AtEndEnvironment{table}{\vspace{-3mm}}
+
+\AtBeginDocument{
+		  \newlength{\vocabindentlength}
+		  \settowidth{\vocabindentlength}{I }
+		  }
+
+\setlist[enumerate,1]{label=\arabic*.}
+\setlist[enumerate,2]{label=(\textit{\alph*})}
+
+\renewcommand\labelenumi{(\alph{enumi})}
+\renewcommand\theenumi{\alph{enumi}}
+\renewcommand\labelenumii{\roman{enumii}.}
+\renewcommand\theenumii{\roman{enumii}.}
+
+\setcounter{secnumdepth}{5}
+
+\setlength{\parindent}{1em}
+
+\newcommand{\hangpar}[2]{\hangindent#1\hangafter#2\noindent}
+\newenvironment{hangpars}[2]{\setlength{\parindent}{\z@}
+	\everypar={\hangpar{#1}{#2}}}{\par}
+
+\raggedcolumns

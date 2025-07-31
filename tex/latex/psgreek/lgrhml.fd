@@ -1,0 +1,34 @@
+%Filename: lgrhml.fd
+%Created by: tex hancock
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{lgrhml.fd}
+   [2004/04/23 Fontinst v1.926 font definitions for LGR/hml.]
+
+\DeclareFontFamily{LGR}{hml}{}
+
+\DeclareFontShape{LGR}{hml}{m}{it}{
+   <-> hmlrgr
+}{}
+
+\DeclareFontShape{LGR}{hml}{m}{n}{
+   <-> hmlrgr
+}{}
+
+\DeclareFontShape{LGR}{hml}{m}{sc}{
+   <-> hmlrcgr
+}{}
+
+\DeclareFontShape{LGR}{hml}{bx}{it}{<->ssub * hml/m/it}{}
+\DeclareFontShape{LGR}{hml}{b}{it}{<->ssub * hml/bx/it}{}
+\DeclareFontShape{LGR}{hml}{m}{sl}{<->ssub * hml/m/it}{}
+\DeclareFontShape{LGR}{hml}{bx}{sl}{<->ssub * hml/m/sl}{}
+\DeclareFontShape{LGR}{hml}{b}{sl}{<->ssub * hml/bx/sl}{}
+\DeclareFontShape{LGR}{hml}{bx}{n}{<->ssub * hml/m/n}{}
+\DeclareFontShape{LGR}{hml}{b}{n}{<->ssub * hml/bx/n}{}
+\DeclareFontShape{LGR}{hml}{bx}{sc}{<->ssub * hml/m/sc}{}
+\DeclareFontShape{LGR}{hml}{b}{sc}{<->ssub * hml/bx/sc}{}
+
+\endinput

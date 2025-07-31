@@ -1,0 +1,34 @@
+%Filename: lgrhof.fd
+%Created by: tex hancock
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{lgrhof.fd}
+   [2004/04/23 Fontinst v1.926 font definitions for LGR/hof.]
+
+\DeclareFontFamily{LGR}{hof}{}
+
+\DeclareFontShape{LGR}{hof}{m}{it}{
+   <-> hofrgr
+}{}
+
+\DeclareFontShape{LGR}{hof}{m}{n}{
+   <-> hofrgr
+}{}
+
+\DeclareFontShape{LGR}{hof}{m}{sc}{
+   <-> hofrcgr
+}{}
+
+\DeclareFontShape{LGR}{hof}{bx}{it}{<->ssub * hof/m/it}{}
+\DeclareFontShape{LGR}{hof}{b}{it}{<->ssub * hof/bx/it}{}
+\DeclareFontShape{LGR}{hof}{m}{sl}{<->ssub * hof/m/it}{}
+\DeclareFontShape{LGR}{hof}{bx}{sl}{<->ssub * hof/m/sl}{}
+\DeclareFontShape{LGR}{hof}{b}{sl}{<->ssub * hof/bx/sl}{}
+\DeclareFontShape{LGR}{hof}{bx}{n}{<->ssub * hof/m/n}{}
+\DeclareFontShape{LGR}{hof}{b}{n}{<->ssub * hof/bx/n}{}
+\DeclareFontShape{LGR}{hof}{bx}{sc}{<->ssub * hof/m/sc}{}
+\DeclareFontShape{LGR}{hof}{b}{sc}{<->ssub * hof/bx/sc}{}
+
+\endinput

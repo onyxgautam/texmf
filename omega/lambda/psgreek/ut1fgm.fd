@@ -1,0 +1,34 @@
+%Filename: ut1fgm.fd
+%Created by: tex opublic
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ut1fgm.fd}
+   [2004/04/23 Fontinst v1.926 font definitions for UT1/fgm.]
+
+\DeclareFontFamily{UT1}{fgm}{}
+
+\DeclareFontShape{UT1}{fgm}{m}{it}{
+   <-> fgmrut
+}{}
+
+\DeclareFontShape{UT1}{fgm}{m}{n}{
+   <-> fgmrut
+}{}
+
+\DeclareFontShape{UT1}{fgm}{m}{sc}{
+   <-> fgmrcut
+}{}
+
+\DeclareFontShape{UT1}{fgm}{bx}{it}{<->ssub * fgm/m/it}{}
+\DeclareFontShape{UT1}{fgm}{b}{it}{<->ssub * fgm/bx/it}{}
+\DeclareFontShape{UT1}{fgm}{m}{sl}{<->ssub * fgm/m/it}{}
+\DeclareFontShape{UT1}{fgm}{bx}{sl}{<->ssub * fgm/m/sl}{}
+\DeclareFontShape{UT1}{fgm}{b}{sl}{<->ssub * fgm/bx/sl}{}
+\DeclareFontShape{UT1}{fgm}{bx}{n}{<->ssub * fgm/m/n}{}
+\DeclareFontShape{UT1}{fgm}{b}{n}{<->ssub * fgm/bx/n}{}
+\DeclareFontShape{UT1}{fgm}{bx}{sc}{<->ssub * fgm/m/sc}{}
+\DeclareFontShape{UT1}{fgm}{b}{sc}{<->ssub * fgm/bx/sc}{}
+
+\endinput

@@ -1,0 +1,73 @@
+MILAN GREEK
+
+This font is a modernized version of the typeface used for the edition 
+of Isocrates published  in Milan in 1493, which may have been cut by 
+Heinrich Schinzenzeler and Sebastiano da Pontremolo. The original 
+typeface is the best of the family of bold, rugged faces used for the 
+very first Greek texts to be published in this city. It includes 
+several forms of certain letters, of which I have selected the most 
+modern in style. Two letters, eta and nu, had only one version and 
+this would not have been legible to a modern reader, so I have drawn 
+completely new letters. The episema are also invented by me. The 
+original had no capitals. Although there is a Milan Greek face with 
+capitals, that of Bonus Accursius, 1480, these are ornate and rather 
+eastern in form and not suitable for modern use. So I have had to fake 
+the capitals as well.
+
+These fonts have the character set of the Greek font supplied with the
+shareware program WinGreek for Windows (wgreek18.zip or wgreek19.zip 
+from SimTel mirror sites), with the additions listed below. Only the 
+Type 1 version of the font has the characters with codes below 32; all 
+these characters are printable in Word for Windows and many other 
+Windows applications. TrueType fonts can't display characters under 
+32.
+
+1 C-shaped capital Sigma
+2 c-shaped small sigma
+10 half space
+32-126 [as WinGreek, but the useless <> signs have been styled as
+     corner brackets]
+128 left double quote
+129 right double quote
+130 exclamation mark
+131-251 [as WinGreek, but the unprintable character 160 is blank; see
+     254]
+252 epsilon circumflex [added to later versions of WinGreek - why?]
+253 omicron circumflex [ditto]
+254 diaeresis grave [some versions of the WinGreek font had this on
+     160, which is unprintable]
+255 low prime [for numerals]
+
+Kerning: all unaccented lower case letters are kerned relative to each 
+other, so that numerals can be printed properly. Otherwise, only pairs 
+that actually occur in classical Greek are kerned. Word for Windows 
+cannot use kerning in TrueType fonts that do not have standard 
+encoding - as the Greek fonts do not. The fonts are designed to look 
+OK without kerning, though obviously kerning improves letter spacing.
+
+
+THESE FONTS ARE SHAREWARE
+
+They took a lot of work to design, and I would be touchingly grateful 
+if you could see your way to paying a small fee for them. So please 
+send a cheque for $20 or equivalent in other currency (or 10 pounds 
+sterling) to:
+
+Ralph Hancock
+17 Queen's Gate Place
+London SW7 5NY
+United Kingdom
+
+tel & fax +44171 584 2457
+e-mail hancock@dircon.co.uk
+http://www.users.dircon.co.uk/~hancock
+
+Please get in touch if you want a different version of the font. I 
+will recode it, free, to any coding you like - as long as you tell me 
+EXACTLY what character set you want. Mac versions can also be 
+supplied, normally in the popular GreekKeys character set but this can 
+be changed too. Note that this is a Greek-only font, so I can't make 
+up a roman-and-Greek character set like the Windows modern Greek one.
+
+By all means pass the font on to other people but, if you do, be sure 
+to include this note with it.

@@ -1,0 +1,34 @@
+%Filename: ut1hml.fd
+%Created by: tex ohancock
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ut1hml.fd}
+   [2004/04/23 Fontinst v1.926 font definitions for UT1/hml.]
+
+\DeclareFontFamily{UT1}{hml}{}
+
+\DeclareFontShape{UT1}{hml}{m}{it}{
+   <-> hmlrut
+}{}
+
+\DeclareFontShape{UT1}{hml}{m}{n}{
+   <-> hmlrut
+}{}
+
+\DeclareFontShape{UT1}{hml}{m}{sc}{
+   <-> hmlrcut
+}{}
+
+\DeclareFontShape{UT1}{hml}{bx}{it}{<->ssub * hml/m/it}{}
+\DeclareFontShape{UT1}{hml}{b}{it}{<->ssub * hml/bx/it}{}
+\DeclareFontShape{UT1}{hml}{m}{sl}{<->ssub * hml/m/it}{}
+\DeclareFontShape{UT1}{hml}{bx}{sl}{<->ssub * hml/m/sl}{}
+\DeclareFontShape{UT1}{hml}{b}{sl}{<->ssub * hml/bx/sl}{}
+\DeclareFontShape{UT1}{hml}{bx}{n}{<->ssub * hml/m/n}{}
+\DeclareFontShape{UT1}{hml}{b}{n}{<->ssub * hml/bx/n}{}
+\DeclareFontShape{UT1}{hml}{bx}{sc}{<->ssub * hml/m/sc}{}
+\DeclareFontShape{UT1}{hml}{b}{sc}{<->ssub * hml/bx/sc}{}
+
+\endinput

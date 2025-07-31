@@ -1,0 +1,10 @@
+%1 = $PFM$
+%2 = $TEXMF$fonts/type1/hancock/psgreek/
+%3 = $TEXMF$fonts/type1/wingreek/psgreek/
+%4 = $TEXMF$fonts/type1/public/psgreek/
+
+@GreekOldFace = greekof %2,1,b="greekof"
+@MilanGreek = milan %2,1,b="milan"
+@Greek-Regular = greeregu %3,1,b="greeregu"
+@GreekOxonia = greeoxon %4,1,b="greeoxon"
+@GreekGaramond = greegara %4,1,b="greegara"

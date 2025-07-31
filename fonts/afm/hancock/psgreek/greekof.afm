@@ -1,0 +1,1085 @@
+StartFontMetrics 2.0 
+FontName GreekOldFace
+FullName Greek Old Face
+FamilyName Greek Old Face
+Weight Medium
+CapHeight 668
+XHeight 412
+Ascender 737
+Descender -178 
+Notice Copyright (c) Ralph Hancock 1996
+EncodingScheme FontSpecific 
+ItalicAngle 0 
+UnderlinePosition -178 
+UnderlineThickness 33 
+FontBBox -35 -179 833 738 
+StartCharMetrics 246 
+C 1 ; WX 668 ; N Csigma ; B 40 -14 617 670 ;
+C 2 ; WX 367 ; N epsilon1 ; B 20 -13 320 412 ;
+C 3 ; WX 496 ; N theta1 ; B 2 -13 530 737 ;
+C 4 ; WX 471 ; N kappa1 ; B -4 -13 453 412 ;
+C 5 ; WX 392 ; N rho1 ; B 9 -178 358 412 ;
+C 6 ; WX 534 ; N phi1 ; B 31 -178 503 412 ;
+C 7 ; WX 437 ; N quotedblleftgreek ; B 60 417 381 668 ;
+C 10 ; WX 126 ; N halfspace ; B 0 0 0 0 ;
+C 15 ; WX 367 ; N epsilon1asper ; B 20 -13 320 737 ;
+C 16 ; WX 367 ; N epsilon1lenis ; B 20 -13 320 737 ;
+C 17 ; WX 367 ; N epsilon1acute ; B 20 -13 320 737 ;
+C 18 ; WX 367 ; N epsilon1asperacute ; B 20 -13 383 737 ;
+C 19 ; WX 367 ; N epsilon1lenisacute ; B 20 -13 383 737 ;
+C 20 ; WX 367 ; N epsilon1grave ; B 20 -13 320 737 ;
+C 21 ; WX 367 ; N epsilon1aspergrave ; B 20 -13 394 737 ;
+C 22 ; WX 367 ; N epsilon1lenisgrave ; B 20 -13 394 737 ;
+C 23 ; WX 367 ; N epsilon1circum ; B 20 -13 376 668 ;
+C 24 ; WX 392 ; N rho1asper ; B 9 -178 358 737 ;
+C 25 ; WX 392 ; N rho1lenis ; B 9 -178 358 737 ;
+C 26 ; WX 397 ; N breve ; B 64 614 325 737 ;
+C 27 ; WX 397 ; N macron ; B 27 635 365 668 ;
+C 28 ; WX 281 ; N quoteleft ; B 75 417 201 668 ;
+C 29 ; WX 281 ; N quoteright ; B 84 417 210 668 ;
+C 32 ; WX 252 ; N space ; B 0 0 0 0 ;
+C 33 ; WX 669 ; N arrowsw ; B 64 0 615 551 ;
+C 34 ; WX 473 ; N sampi ; B 41 -179 444 737 ;
+C 35 ; WX 375 ; N digamma ; B -31 -179 376 400 ;
+C 36 ; WX 447 ; N stigma ; B 17 -178 446 470 ;
+C 37 ; WX 360 ; N koppa ; B 29 -13 367 737 ;
+C 38 ; WX 360 ; N koppa1 ; B 29 -13 365 737 ;
+C 39 ; WX 301 ; N lenis ; B 85 514 223 737 ;
+C 40 ; WX 349 ; N parenleft ; B 60 -102 292 670 ;
+C 41 ; WX 349 ; N parenright ; B 59 -102 291 670 ;
+C 42 ; WX 397 ; N asterisk ; B 42 288 364 668 ;
+C 43 ; WX 486 ; N segno ; B 20 -13 459 412 ;
+C 44 ; WX 271 ; N comma ; B 58 -132 184 119 ;
+C 45 ; WX 323 ; N hyphen ; B 35 151 288 252 ;
+C 46 ; WX 271 ; N period ; B 57 -13 184 119 ;
+C 47 ; WX 301 ; N acutegreek ; B 84 524 222 737 ;
+C 48 ; WX 442 ; N zero ; B 50 -13 392 445 ;
+C 49 ; WX 442 ; N one ; B 60 0 382 433 ;
+C 50 ; WX 442 ; N two ; B 34 0 412 446 ;
+C 51 ; WX 442 ; N three ; B 45 -176 396 446 ;
+C 52 ; WX 442 ; N four ; B 33 -178 409 454 ;
+C 53 ; WX 442 ; N five ; B 31 -176 414 455 ;
+C 54 ; WX 442 ; N six ; B 42 -13 399 671 ;
+C 55 ; WX 442 ; N seven ; B 42 -178 410 433 ;
+C 56 ; WX 442 ; N eight ; B 42 -13 400 668 ;
+C 57 ; WX 442 ; N nine ; B 46 -176 397 445 ;
+C 58 ; WX 271 ; N periodcenteredgreek ; B 87 284 214 416 ;
+C 59 ; WX 271 ; N semicolon ; B 87 -132 214 416 ;
+C 60 ; WX 450 ; N cornerleft ; B 43 -128 399 672 ;
+C 61 ; WX 476 ; N equal ; B 54 86 424 317 ;
+C 62 ; WX 450 ; N cornerright ; B 46 -128 402 672 ;
+C 63 ; WX 488 ; N question ; B 84 -13 460 668 ;
+C 64 ; WX 397 ; N dieresisgreek ; B 48 563 347 668 ;
+C 65 ; WX 708 ; N Alpha ; B 14 0 693 668 ;
+C 66 ; WX 619 ; N Beta ; B 27 0 564 655 ;
+C 67 ; WX 708 ; N Chi ; B 11 0 699 655 ;
+C 68 ; WX 708 ; N Delta ; B 27 0 684 668 ;
+C 69 ; WX 619 ; N Epsilon ; B 40 0 583 655 ;
+C 70 ; WX 661 ; N Phi ; B 31 0 620 655 ;
+C 71 ; WX 619 ; N Gamma ; B 24 0 575 655 ;
+C 72 ; WX 751 ; N Eta ; B 29 0 723 655 ;
+C 73 ; WX 355 ; N Iota ; B 39 0 317 655 ;
+C 74 ; WX 647 ; N omegaiota ; B 22 -178 609 412 ;
+C 75 ; WX 638 ; N Kappa ; B 16 0 635 655 ;
+C 76 ; WX 708 ; N Lambda ; B 14 0 693 668 ;
+C 77 ; WX 864 ; N Mu ; B 25 -13 833 655 ;
+C 78 ; WX 690 ; N Nu ; B 22 -14 660 655 ;
+C 79 ; WX 661 ; N Omicron ; B 31 -13 631 668 ;
+C 80 ; WX 751 ; N Pi ; B 29 0 722 655 ;
+C 81 ; WX 661 ; N Theta ; B 31 -13 631 668 ;
+C 82 ; WX 574 ; N Rho ; B 15 0 545 655 ;
+C 83 ; WX 644 ; N Sigma ; B 20 0 621 655 ;
+C 84 ; WX 641 ; N Tau ; B 20 0 624 654 ;
+C 85 ; WX 667 ; N Upsilon ; B 20 0 647 668 ;
+C 86 ; WX 503 ; N etaiota ; B 4 -178 468 412 ;
+C 87 ; WX 779 ; N Omega ; B 26 0 753 668 ;
+C 88 ; WX 635 ; N Xi ; B 28 0 604 659 ;
+C 89 ; WX 661 ; N Psi ; B 12 0 650 655 ;
+C 90 ; WX 574 ; N Zeta ; B 26 0 551 655 ;
+C 91 ; WX 305 ; N bracketleft ; B 49 -87 248 655 ;
+C 92 ; WX 301 ; N gravegreek ; B 83 524 221 737 ;
+C 93 ; WX 305 ; N bracketright ; B 57 -87 256 655 ;
+C 94 ; WX 397 ; N circumgreek ; B 41 515 356 668 ;
+C 95 ; WX 385 ; N underscore ; B -5 -178 390 -146 ;
+C 96 ; WX 301 ; N asper ; B 83 514 221 737 ;
+C 97 ; WX 522 ; N alpha ; B 20 -13 496 412 ;
+C 98 ; WX 473 ; N beta ; B -31 -179 459 737 ;
+C 99 ; WX 478 ; N chi ; B -35 -178 499 412 ;
+C 100 ; WX 392 ; N delta ; B 20 -13 422 738 ;
+C 101 ; WX 377 ; N epsilon ; B 20 -14 357 412 ;
+C 102 ; WX 534 ; N phi ; B 20 -178 503 738 ;
+C 103 ; WX 491 ; N gamma ; B 10 -179 515 412 ;
+C 104 ; WX 503 ; N eta ; B 4 -178 468 412 ;
+C 105 ; WX 241 ; N iota ; B 44 -13 193 412 ;
+C 106 ; WX 354 ; N sigma1 ; B 17 -178 345 412 ;
+C 107 ; WX 461 ; N kappa ; B 26 -14 451 412 ;
+C 108 ; WX 492 ; N lambda ; B -28 -13 474 737 ;
+C 109 ; WX 539 ; N mu ; B -20 -178 518 412 ;
+C 110 ; WX 376 ; N nu ; B 29 -13 352 412 ;
+C 111 ; WX 392 ; N omicron ; B 20 -13 358 412 ;
+C 112 ; WX 505 ; N pi ; B 6 -15 519 405 ;
+C 113 ; WX 401 ; N theta ; B 31 -14 403 737 ;
+C 114 ; WX 392 ; N rho ; B -26 -178 358 413 ;
+C 115 ; WX 496 ; N sigma ; B 20 -13 516 412 ;
+C 116 ; WX 440 ; N tau ; B 6 -13 464 405 ;
+C 117 ; WX 394 ; N upsilon ; B 33 -13 365 412 ;
+C 118 ; WX 522 ; N alphaiota ; B 20 -178 496 412 ;
+C 119 ; WX 647 ; N omega ; B 22 -13 609 412 ;
+C 120 ; WX 366 ; N xi ; B 29 -178 429 737 ;
+C 121 ; WX 525 ; N psi ; B 23 -178 539 738 ;
+C 122 ; WX 366 ; N zeta ; B 29 -178 457 738 ;
+C 123 ; WX 305 ; N braceleft ; B 60 -100 251 668 ;
+C 124 ; WX 305 ; N bar ; B 118 -13 183 668 ;
+C 125 ; WX 305 ; N braceright ; B 61 -100 253 668 ;
+C 126 ; WX 476 ; N asciitilde ; B 73 116 405 286 ;
+C 128 ; WX 437 ; N quotedblleft ; B 57 417 377 668 ;
+C 129 ; WX 437 ; N quotedblright ; B 60 417 381 668 ;
+C 130 ; WX 271 ; N exclam ; B 110 -13 237 668 ;
+C 131 ; WX 241 ; N iotaasper ; B 44 -13 231 737 ;
+C 132 ; WX 241 ; N iotalenis ; B 44 -13 233 737 ;
+C 133 ; WX 241 ; N iotaacute ; B 44 -13 253 737 ;
+C 134 ; WX 241 ; N iotaasperacute ; B 5 -13 333 737 ;
+C 135 ; WX 241 ; N iotalenisacute ; B 7 -13 333 737 ;
+C 136 ; WX 241 ; N iotagrave ; B 44 -13 232 737 ;
+C 137 ; WX 241 ; N iotaaspergrave ; B 5 -13 344 737 ;
+C 138 ; WX 241 ; N iotalenisgrave ; B 7 -13 344 737 ;
+C 139 ; WX 241 ; N iotacircum ; B 11 -13 326 668 ;
+C 140 ; WX 241 ; N iotaaspercircum ; B 11 -13 326 737 ;
+C 141 ; WX 241 ; N iotaleniscircum ; B 11 -13 326 737 ;
+C 142 ; WX 241 ; N iotadieresis ; B 28 -13 327 668 ;
+C 143 ; WX 241 ; N iotadieresisacute ; B 8 -13 347 737 ;
+C 144 ; WX 241 ; N iotadieresisgrave ; B 8 -13 347 737 ;
+C 145 ; WX 397 ; N aspercircum ; B 41 445 356 737 ;
+C 146 ; WX 397 ; N leniscircum ; B 41 445 356 737 ;
+C 147 ; WX 397 ; N asperacute ; B 35 514 363 737 ;
+C 148 ; WX 397 ; N lenisacute ; B 37 514 363 737 ;
+C 149 ; WX 397 ; N aspergrave ; B 35 514 374 737 ;
+C 150 ; WX 397 ; N lenisgrave ; B 37 514 374 737 ;
+C 151 ; WX 397 ; N dieresisacute ; B 28 502 367 737 ;
+C 152 ; WX 377 ; N epsilonasper ; B 20 -14 357 737 ;
+C 153 ; WX 377 ; N epsilonlenis ; B 20 -14 357 737 ;
+C 154 ; WX 377 ; N epsilonacute ; B 20 -14 357 737 ;
+C 155 ; WX 377 ; N epsilonasperacute ; B 20 -14 413 737 ;
+C 156 ; WX 377 ; N epsilonlenisacute ; B 20 -14 413 737 ;
+C 157 ; WX 377 ; N epsilongrave ; B 20 -14 357 737 ;
+C 158 ; WX 377 ; N epsilonaspergrave ; B 20 -14 444 737 ;
+C 159 ; WX 377 ; N epsilonlenisgrave ; B 20 -14 424 737 ;
+C 160 ; WX 248 ; N nbspace ; B 0 0 0 0 ;
+C 161 ; WX 522 ; N alphaasper ; B 20 -13 496 737 ;
+C 162 ; WX 522 ; N alphalenis ; B 20 -13 496 737 ;
+C 163 ; WX 522 ; N alphaacute ; B 20 -13 496 737 ;
+C 164 ; WX 522 ; N alphaasperacute ; B 20 -13 496 737 ;
+C 165 ; WX 522 ; N alphalenisacute ; B 20 -13 496 737 ;
+C 166 ; WX 522 ; N alphagrave ; B 20 -13 496 737 ;
+C 167 ; WX 522 ; N alphaaspergrave ; B 20 -13 496 737 ;
+C 168 ; WX 522 ; N alphalenisgrave ; B 20 -13 496 737 ;
+C 169 ; WX 522 ; N alphacircum ; B 20 -13 496 668 ;
+C 170 ; WX 522 ; N alphaaspercircum ; B 20 -13 496 737 ;
+C 171 ; WX 522 ; N alphaleniscircum ; B 20 -13 496 737 ;
+C 172 ; WX 512 ; N alphaiotaasper ; B 20 -178 496 737 ;
+C 173 ; WX 512 ; N alphaiotalenis ; B 20 -178 496 737 ;
+C 174 ; WX 512 ; N alphaiotaacute ; B 20 -178 496 737 ;
+C 175 ; WX 512 ; N alphaiotaasperacute ; B 20 -178 496 737 ;
+C 176 ; WX 512 ; N alphaiotalenisacute ; B 20 -178 496 737 ;
+C 177 ; WX 512 ; N alphaiotagrave ; B 20 -178 496 737 ;
+C 178 ; WX 512 ; N alphaiotaaspergrave ; B 20 -178 496 737 ;
+C 179 ; WX 512 ; N alphaiotalenisgrave ; B 20 -178 496 737 ;
+C 180 ; WX 512 ; N alphaiotacircum ; B 20 -178 496 668 ;
+C 181 ; WX 512 ; N alphaiotaaspercircum ; B 20 -178 496 737 ;
+C 182 ; WX 512 ; N alphaiotaleniscircum ; B 20 -178 496 737 ;
+C 183 ; WX 392 ; N rhoasper ; B -26 -178 358 737 ;
+C 184 ; WX 392 ; N rholenis ; B -26 -178 358 737 ;
+C 185 ; WX 503 ; N etaasper ; B 4 -178 468 737 ;
+C 186 ; WX 503 ; N etalenis ; B 4 -178 468 737 ;
+C 187 ; WX 503 ; N etaacute ; B 4 -178 468 737 ;
+C 188 ; WX 503 ; N etaasperacute ; B 4 -178 513 737 ;
+C 189 ; WX 503 ; N etalenisacute ; B 4 -178 513 737 ;
+C 190 ; WX 503 ; N etagrave ; B 4 -178 468 737 ;
+C 191 ; WX 503 ; N etaaspergrave ; B 4 -178 524 737 ;
+C 192 ; WX 503 ; N etalenisgrave ; B 4 -178 524 737 ;
+C 193 ; WX 503 ; N etacircum ; B 4 -178 506 668 ;
+C 194 ; WX 503 ; N etaaspercircum ; B 4 -178 506 737 ;
+C 195 ; WX 503 ; N etaleniscircum ; B 4 -178 506 737 ;
+C 196 ; WX 241 ; N iotasubscript ; B 65 -178 161 -35 ;
+C 197 ; WX 503 ; N etaiotaasper ; B 4 -178 468 737 ;
+C 198 ; WX 503 ; N etaiotalenis ; B 4 -178 468 737 ;
+C 199 ; WX 503 ; N etaiotaacute ; B 4 -178 468 737 ;
+C 200 ; WX 503 ; N etaiotaasperacute ; B 4 -178 513 737 ;
+C 201 ; WX 503 ; N etaiotalenisacute ; B 4 -178 513 737 ;
+C 202 ; WX 503 ; N etaiotagrave ; B 4 -178 468 737 ;
+C 203 ; WX 503 ; N etaiotaaspergrave ; B 4 -178 524 737 ;
+C 204 ; WX 503 ; N etaiotalenisgrave ; B 4 -178 524 737 ;
+C 205 ; WX 503 ; N etaiotacircum ; B 4 -178 506 668 ;
+C 206 ; WX 503 ; N etaiotaaspercircum ; B 4 -178 506 737 ;
+C 207 ; WX 503 ; N etaiotaleniscircum ; B 4 -178 506 737 ;
+C 208 ; WX 392 ; N omicronasper ; B 20 -13 358 737 ;
+C 209 ; WX 392 ; N omicronlenis ; B 20 -13 358 737 ;
+C 210 ; WX 392 ; N omicronacute ; B 20 -13 358 737 ;
+C 211 ; WX 392 ; N omicronasperacute ; B 20 -13 413 737 ;
+C 212 ; WX 392 ; N omicronlenisacute ; B 20 -13 413 737 ;
+C 213 ; WX 392 ; N omicrongrave ; B 20 -13 358 737 ;
+C 214 ; WX 392 ; N omicronaspergrave ; B 20 -13 444 737 ;
+C 215 ; WX 392 ; N omicronlenisgrave ; B 20 -13 424 737 ;
+C 216 ; WX 394 ; N upsilonasper ; B 33 -13 365 737 ;
+C 217 ; WX 394 ; N upsilonlenis ; B 33 -13 365 737 ;
+C 218 ; WX 394 ; N upsilonacute ; B 33 -13 365 737 ;
+C 219 ; WX 394 ; N upsilonasperacute ; B 33 -13 403 737 ;
+C 220 ; WX 394 ; N upsilonlenisacute ; B 33 -13 403 737 ;
+C 221 ; WX 394 ; N upsilongrave ; B 33 -13 365 737 ;
+C 222 ; WX 394 ; N upsilonaspergrave ; B 33 -13 414 737 ;
+C 223 ; WX 394 ; N upsilonlenisgrave ; B 33 -13 414 737 ;
+C 224 ; WX 394 ; N upsiloncircum ; B 33 -13 396 668 ;
+C 225 ; WX 394 ; N upsilonaspercircum ; B 33 -13 396 737 ;
+C 226 ; WX 394 ; N upsilonleniscircum ; B 33 -13 396 737 ;
+C 227 ; WX 394 ; N upsilondieresis ; B 33 -13 397 668 ;
+C 228 ; WX 394 ; N upsilondieresisacute ; B 33 -13 417 737 ;
+C 229 ; WX 394 ; N upsilondieresisgrave ; B 33 -13 417 737 ;
+C 230 ; WX 647 ; N omegaasper ; B 22 -13 609 737 ;
+C 231 ; WX 647 ; N omegalenis ; B 22 -13 609 737 ;
+C 232 ; WX 647 ; N omegaacute ; B 22 -13 609 737 ;
+C 233 ; WX 647 ; N omegaasperacute ; B 22 -13 609 737 ;
+C 234 ; WX 647 ; N omegalenisacute ; B 22 -13 609 737 ;
+C 235 ; WX 647 ; N omegagrave ; B 22 -13 609 737 ;
+C 236 ; WX 647 ; N omegaaspergrave ; B 22 -13 609 737 ;
+C 237 ; WX 647 ; N omegalenisgrave ; B 22 -13 609 737 ;
+C 238 ; WX 647 ; N omegacircum ; B 22 -13 609 668 ;
+C 239 ; WX 647 ; N omegaaspercircum ; B 22 -13 609 737 ;
+C 240 ; WX 647 ; N omegaleniscircum ; B 22 -13 609 737 ;
+C 241 ; WX 647 ; N omegaiotaasper ; B 22 -178 609 737 ;
+C 242 ; WX 647 ; N omegaiotalenis ; B 22 -178 609 737 ;
+C 243 ; WX 647 ; N omegaiotaacute ; B 22 -178 609 737 ;
+C 244 ; WX 647 ; N omegaiotaasperacute ; B 22 -178 609 737 ;
+C 245 ; WX 647 ; N omegaiotalenisacute ; B 22 -178 609 737 ;
+C 246 ; WX 647 ; N omegaiotagrave ; B 22 -178 609 737 ;
+C 247 ; WX 647 ; N omegaiotaaspergrave ; B 22 -178 609 737 ;
+C 248 ; WX 647 ; N omegaiotalenisgrave ; B 22 -178 609 737 ;
+C 249 ; WX 647 ; N omegaiotacircum ; B 22 -178 609 668 ;
+C 250 ; WX 647 ; N omegaiotaaspercircum ; B 22 -178 609 737 ;
+C 251 ; WX 647 ; N omegaiotaleniscircum ; B 22 -178 609 737 ;
+C 252 ; WX 377 ; N epsiloncircum ; B 20 -14 406 668 ;
+C 253 ; WX 392 ; N omicroncircum ; B 20 -13 406 668 ;
+C 254 ; WX 397 ; N dieresisgrave ; B 28 502 367 737 ;
+C 255 ; WX 241 ; N primebase ; B 46 -178 184 34 ;
+EndCharMetrics 
+StartKernData 
+StartKernPairs 816 
+KPX epsilon1 sampi -70 
+KPX epsilon1 lenis -40 
+KPX epsilon1 acutegreek -40 
+KPX theta1 lenis -40 
+KPX theta1 acutegreek -40 
+KPX kappa1 sampi -40 
+KPX kappa1 lenis -40 
+KPX kappa1 acutegreek -40 
+KPX rho1 sampi -70 
+KPX rho1 lenis -40 
+KPX rho1 acutegreek -40 
+KPX phi1 sampi -70 
+KPX phi1 lenis -40 
+KPX phi1 acutegreek -40 
+KPX quoteleft Alpha -130 
+KPX quoteleft Omicron -20 
+KPX quoteleft Omega -60 
+KPX quoteleft Delta -130 
+KPX quoteleft Lambda -130 
+KPX quoteleft Theta -20 
+KPX quoteleft Phi -20 
+KPX quoteright Alpha -150 
+KPX sampi lenis -60 
+KPX sampi acutegreek -60 
+KPX digamma sampi -30 
+KPX digamma lenis -40 
+KPX digamma acutegreek -40 
+KPX stigma sampi -30 
+KPX stigma lenis -40 
+KPX stigma acutegreek -40 
+KPX lenis Alpha -150 
+KPX lenis Omicron -40 
+KPX lenis Omega -80 
+KPX acutegreek Alpha -150 
+KPX acutegreek Omicron -40 
+KPX acutegreek Omega -80 
+KPX zero one -40 
+KPX one nine -40 
+KPX one eight -40 
+KPX one seven -40 
+KPX one six -40 
+KPX one five -40 
+KPX one four -40 
+KPX one three -40 
+KPX one two -40 
+KPX one one -40 
+KPX one zero -40 
+KPX two one -40 
+KPX three one -40 
+KPX four one -40 
+KPX five one -40 
+KPX six one -40 
+KPX seven one -40 
+KPX eight one -40 
+KPX nine one -40 
+KPX Alpha asterisk -150 
+KPX Alpha acutegreek -150 
+KPX Alpha quoteright -150 
+KPX Alpha quotedblright -150 
+KPX Alpha rholenis 30 
+KPX Alpha rhoasper 30 
+KPX Alpha lambda 40 
+KPX Alpha beta 30 
+KPX Alpha mu 30 
+KPX Alpha rho 30 
+KPX Alpha Psi -70 
+KPX Alpha Csigma -70 
+KPX Alpha Phi -70 
+KPX Alpha Omicron -70 
+KPX Alpha Tau -90 
+KPX Alpha Upsilon -90 
+KPX Alpha Omega -50 
+KPX Beta Alpha -30 
+KPX Beta Delta -30 
+KPX Beta Lambda -30 
+KPX Beta Omicron -20 
+KPX Beta Upsilon -20 
+KPX Beta Omega -20 
+KPX Beta Csigma -20 
+KPX Chi rho1 30 
+KPX Chi mu 30 
+KPX Chi rho 30 
+KPX Chi Csigma -30 
+KPX Chi Omicron -50 
+KPX Chi Theta -50 
+KPX Chi Omega -30 
+KPX Delta asterisk -100 
+KPX Delta acutegreek -150 
+KPX Delta quotedblright -150 
+KPX Delta lenis -150 
+KPX Delta quoteright -150 
+KPX Delta rho 30 
+KPX Delta Omicron -70 
+KPX Delta Upsilon -90 
+KPX Delta Omega -40 
+KPX Delta Csigma -70 
+KPX Phi Alpha -70 
+KPX Phi Lambda -70 
+KPX Phi Upsilon -20 
+KPX Phi Omega -20 
+KPX Phi Sigma -40 
+KPX Gamma semicolon -100 
+KPX Gamma periodcenteredgreek -100 
+KPX Gamma period -150 
+KPX Gamma comma -150 
+KPX Gamma omegaiotacircum -150 
+KPX Gamma omegaiotagrave -150 
+KPX Gamma omegaiotaacute -150 
+KPX Gamma omegacircum -150 
+KPX Gamma omegagrave -150 
+KPX Gamma omegaacute -150 
+KPX Gamma upsiloncircum -100 
+KPX Gamma upsilongrave -150 
+KPX Gamma upsilonacute -150 
+KPX Gamma omicrongrave -150 
+KPX Gamma omicronacute -150 
+KPX Gamma etaiotacircum -150 
+KPX Gamma etaiotagrave -150 
+KPX Gamma etaiotaacute -150 
+KPX Gamma etacircum -150 
+KPX Gamma etagrave -150 
+KPX Gamma etaacute -150 
+KPX Gamma omicroncircum -100 
+KPX Gamma epsiloncircum -100 
+KPX Gamma alphaiotagrave -150 
+KPX Gamma alphaiotacircum -150 
+KPX Gamma alphaiotaacute -150 
+KPX Gamma alphacircum -150 
+KPX Gamma alphagrave -150 
+KPX Gamma alphaacute -150 
+KPX Gamma epsilongrave -150 
+KPX Gamma epsilonacute -150 
+KPX Gamma iotacircum -50 
+KPX Gamma iotagrave -100 
+KPX Gamma iotaacute -100 
+KPX Gamma omega -150 
+KPX Gamma upsilon -150 
+KPX Gamma rho -150 
+KPX Gamma nu -150 
+KPX Gamma mu -150 
+KPX Gamma lambda -50 
+KPX Gamma iota -150 
+KPX Gamma alphaiota -150 
+KPX Gamma etaiota -150 
+KPX Gamma omegaiota -150 
+KPX Gamma eta -150 
+KPX Gamma epsilon -150 
+KPX Gamma alpha -150 
+KPX Gamma epsilon1circum -100 
+KPX Gamma epsilon1grave -150 
+KPX Gamma epsilon1acute -150 
+KPX Gamma rho1 -150 
+KPX Gamma epsilon1 -150 
+KPX Gamma omicron -150 
+KPX Gamma Alpha -120 
+KPX Gamma Lambda -120 
+KPX Gamma Omicron -20 
+KPX Gamma Omega -50 
+KPX Gamma Delta -120 
+KPX Kappa rho 30 
+KPX Kappa mu 30 
+KPX Kappa lambda 40 
+KPX Kappa rho1 30 
+KPX Kappa Csigma -50 
+KPX Kappa Omicron -50 
+KPX Kappa Theta -50 
+KPX Kappa Omega -40 
+KPX Kappa Upsilon -20 
+KPX Kappa Phi -50 
+KPX Lambda asterisk -150 
+KPX Lambda lenis -150 
+KPX Lambda acutegreek -150 
+KPX Lambda quoteright -150 
+KPX Lambda quotedblright -150 
+KPX Lambda Phi -70 
+KPX Lambda Psi -70 
+KPX Lambda Theta -70 
+KPX Lambda Omicron -70 
+KPX Lambda Tau -90 
+KPX Lambda Upsilon -90 
+KPX Lambda Csigma -70 
+KPX Omicron Alpha -70 
+KPX Omicron Delta -60 
+KPX Omicron Lambda -70 
+KPX Omicron Sigma -30 
+KPX Omicron Chi -30 
+KPX Omicron Tau -20 
+KPX Omicron Upsilon -20 
+KPX Theta Alpha -70 
+KPX Theta Lambda -70 
+KPX Theta Upsilon -20 
+KPX Theta Omega -20 
+KPX Sigma Alpha -20 
+KPX Sigma Lambda -20 
+KPX Sigma Delta -20 
+KPX Tau comma -80 
+KPX Tau period -80 
+KPX Tau periodcenteredgreek -30 
+KPX Tau semicolon -30 
+KPX Tau omicroncircum -30 
+KPX Tau epsiloncircum -30 
+KPX Tau omegaiotacircum -80 
+KPX Tau omegaiotagrave -80 
+KPX Tau omegaiotaacute -80 
+KPX Tau omegacircum -80 
+KPX Tau omegagrave -80 
+KPX Tau omegaacute -80 
+KPX Tau upsiloncircum -30 
+KPX Tau upsilongrave -80 
+KPX Tau upsilonacute -80 
+KPX Tau omicrongrave -80 
+KPX Tau omicronacute -80 
+KPX Tau etaiotacircum -80 
+KPX Tau etaiotagrave -80 
+KPX Tau etaiotaacute -80 
+KPX Tau etacircum -80 
+KPX Tau etagrave -80 
+KPX Tau etaacute -80 
+KPX Tau alphaiotacircum -80 
+KPX Tau alphaiotagrave -80 
+KPX Tau alphaiotaacute -80 
+KPX Tau alphacircum -80 
+KPX Tau alphagrave -80 
+KPX Tau alphaacute -80 
+KPX Tau epsilongrave -80 
+KPX Tau epsilonacute -80 
+KPX Tau iotagrave -80 
+KPX Tau iotaacute -80 
+KPX Tau omega -80 
+KPX Tau omegaiota -80 
+KPX Tau etaiota -80 
+KPX Tau alphaiota -80 
+KPX Tau upsilon -80 
+KPX Tau rho -80 
+KPX Tau omicron -80 
+KPX Tau mu -80 
+KPX Tau iota -80 
+KPX Tau eta -80 
+KPX Tau epsilon -80 
+KPX Tau alpha -80 
+KPX Tau epsilon1circum -30 
+KPX Tau epsilon1grave -80 
+KPX Tau epsilon1acute -80 
+KPX Tau epsilon1 -80 
+KPX Tau Alpha -90 
+KPX Tau Lambda -90 
+KPX Tau Csigma -20 
+KPX Tau Omicron -20 
+KPX Tau Omega -40 
+KPX Upsilon semicolon -80 
+KPX Upsilon periodcenteredgreek -80 
+KPX Upsilon period -80 
+KPX Upsilon comma -80 
+KPX Upsilon omicroncircum -30 
+KPX Upsilon epsiloncircum -30 
+KPX Upsilon omegaiotacircum -80 
+KPX Upsilon omegaiotagrave -80 
+KPX Upsilon omegaiotaacute -80 
+KPX Upsilon omegacircum -80 
+KPX Upsilon omegagrave -80 
+KPX Upsilon omegaacute -80 
+KPX Upsilon omicrongrave -80 
+KPX Upsilon omicronacute -80 
+KPX Upsilon etaiotacircum -80 
+KPX Upsilon etaiotagrave -80 
+KPX Upsilon etaiotaacute -80 
+KPX Upsilon etacircum -80 
+KPX Upsilon etagrave -80 
+KPX Upsilon etaacute -80 
+KPX Upsilon rholenis -80 
+KPX Upsilon rhoasper -80 
+KPX Upsilon alphaiotacircum -80 
+KPX Upsilon alphaiotagrave -80 
+KPX Upsilon alphaiotaacute -80 
+KPX Upsilon alphacircum -80 
+KPX Upsilon alphagrave -80 
+KPX Upsilon alphaacute -80 
+KPX Upsilon epsilongrave -80 
+KPX Upsilon epsilonacute -80 
+KPX Upsilon iotagrave -30 
+KPX Upsilon iotaacute -30 
+KPX Upsilon iotalenis -30 
+KPX Upsilon iotaasper -30 
+KPX Upsilon psi -80 
+KPX Upsilon omegaiota -80 
+KPX Upsilon etaiota -80 
+KPX Upsilon alphaiota -80 
+KPX Upsilon tau -80 
+KPX Upsilon sigma -80 
+KPX Upsilon rho -80 
+KPX Upsilon pi -80 
+KPX Upsilon omicron -80 
+KPX Upsilon nu -80 
+KPX Upsilon mu -80 
+KPX Upsilon lambda -30 
+KPX Upsilon kappa -80 
+KPX Upsilon sigma1 -80 
+KPX Upsilon iota -80 
+KPX Upsilon eta -80 
+KPX Upsilon gamma -80 
+KPX Upsilon phi -80 
+KPX Upsilon epsilon -80 
+KPX Upsilon chi -80 
+KPX Upsilon alpha -80 
+KPX Upsilon rho1asper -80 
+KPX Upsilon epsilon1circum -30 
+KPX Upsilon epsilon1grave -80 
+KPX Upsilon epsilon1acute -80 
+KPX Upsilon phi1 -80 
+KPX Upsilon rho1 -80 
+KPX Upsilon kappa1 -80 
+KPX Upsilon epsilon1 -80 
+KPX Upsilon Csigma -20 
+KPX Upsilon Omicron -20 
+KPX Upsilon Theta -20 
+KPX Upsilon Omega -40 
+KPX Upsilon Alpha -90 
+KPX Upsilon Lambda -90 
+KPX Upsilon Delta -90 
+KPX Upsilon rho1lenis -80 
+KPX etaiota mu 40 
+KPX etaiota rholenis 20 
+KPX etaiota rhoasper 20 
+KPX etaiota rho1lenis 20 
+KPX etaiota rho1asper 20 
+KPX etaiota rho 20 
+KPX etaiota rho1 20 
+KPX Omega Csigma -20 
+KPX Omega Omicron -20 
+KPX Omega Theta -20 
+KPX Omega Tau -40 
+KPX Omega Upsilon -40 
+KPX Omega Alpha -50 
+KPX Omega Lambda -50 
+KPX Omega Delta -40 
+KPX Omega Psi -20 
+KPX Psi Alpha -70 
+KPX Psi Lambda -70 
+KPX Psi Omega -20 
+KPX circumgreek Alpha -150 
+KPX circumgreek Omicron -40 
+KPX circumgreek Omega -80 
+KPX asper Alpha -150 
+KPX asper Omicron -40 
+KPX asper Omega -80 
+KPX alpha etaiota -50 
+KPX alpha gamma -50 
+KPX alpha eta -50 
+KPX alpha chi -30 
+KPX alpha tau -30 
+KPX alpha pi -30 
+KPX alpha sampi -100 
+KPX alpha lenis -40 
+KPX alpha acutegreek -40 
+KPX alpha etaacute -50 
+KPX alpha etagrave -50 
+KPX alpha etacircum -50 
+KPX alpha etaiotaacute -50 
+KPX alpha etaiotagrave -50 
+KPX alpha etaiotacircum -50 
+KPX chi mu 40 
+KPX chi rho 40 
+KPX chi rho1 20 
+KPX chi digamma 40 
+KPX chi sampi -20 
+KPX chi lenis -40 
+KPX chi acutegreek -40 
+KPX delta koppa 30 
+KPX delta koppa1 30 
+KPX epsilon sampi -60 
+KPX epsilon lenis -40 
+KPX epsilon acutegreek -40 
+KPX phi sampi -80 
+KPX phi lenis -40 
+KPX phi acutegreek -40 
+KPX gamma lenis -40 
+KPX gamma acutegreek -40 
+KPX gamma lambda -40 
+KPX eta rholenis 20 
+KPX eta rhoasper 20 
+KPX eta rho1lenis 20 
+KPX eta rho1asper 20 
+KPX eta mu 40 
+KPX eta rho 20 
+KPX eta rho1 20 
+KPX eta sampi -80 
+KPX eta lenis -40 
+KPX eta acutegreek -40 
+KPX iota sampi -70 
+KPX iota lenis -40 
+KPX iota acutegreek -40 
+KPX sigma1 sampi -40 
+KPX sigma1 lenis -40 
+KPX sigma1 acutegreek -40 
+KPX kappa sampi -40 
+KPX kappa lenis -40 
+KPX kappa acutegreek -40 
+KPX lambda etaiota -40 
+KPX lambda digamma 40 
+KPX lambda gamma -30 
+KPX lambda eta -40 
+KPX lambda sampi -140 
+KPX lambda lenis -60 
+KPX lambda acutegreek -60 
+KPX lambda etaasper -40 
+KPX lambda etaacute -40 
+KPX lambda etagrave -40 
+KPX lambda etacircum -40 
+KPX lambda etaiotaacute -40 
+KPX lambda etaiotagrave -40 
+KPX lambda etaiotacircum -40 
+KPX mu etaiota -40 
+KPX mu eta -40 
+KPX mu chi -30 
+KPX mu gamma -30 
+KPX mu sampi -120 
+KPX mu lenis -40 
+KPX mu acutegreek -40 
+KPX mu etaacute -40 
+KPX mu etagrave -40 
+KPX mu etacircum -40 
+KPX mu etaiotaacute -40 
+KPX mu etaiotagrave -40 
+KPX mu etaiotacircum -40 
+KPX nu sampi -60 
+KPX nu lenis -40 
+KPX nu acutegreek -40 
+KPX nu lambda -40 
+KPX omicron sampi -80 
+KPX omicron lenis -40 
+KPX omicron acutegreek -40 
+KPX pi etaiota 20 
+KPX pi eta 20 
+KPX pi nu 20 
+KPX pi theta 20 
+KPX pi upsilon 20 
+KPX pi psi 20 
+KPX pi theta1 -20 
+KPX pi lenis -40 
+KPX pi acutegreek -40 
+KPX pi etaacute 20 
+KPX pi etagrave 20 
+KPX pi etacircum 20 
+KPX pi etaiotaacute 20 
+KPX pi etaiotagrave 20 
+KPX pi etaiotacircum 20 
+KPX pi upsilonacute 20 
+KPX pi upsilongrave 20 
+KPX pi upsiloncircum 20 
+KPX theta koppa 40 
+KPX theta koppa1 40 
+KPX theta chi 20 
+KPX rho sampi -70 
+KPX rho lenis -40 
+KPX rho acutegreek -40 
+KPX sigma etaiota 20 
+KPX sigma theta1 -50 
+KPX sigma lambda -40 
+KPX sigma eta 20 
+KPX sigma nu 20 
+KPX sigma pi 20 
+KPX sigma tau 20 
+KPX sigma upsilon 20 
+KPX sigma psi 20 
+KPX sigma lenis -40 
+KPX sigma acutegreek -40 
+KPX sigma etaacute 20 
+KPX sigma etagrave 20 
+KPX sigma etacircum 20 
+KPX sigma etaiotaacute 20 
+KPX sigma etaiotagrave 20 
+KPX sigma etaiotacircum 20 
+KPX sigma upsilonacute 20 
+KPX sigma upsilongrave 20 
+KPX sigma upsiloncircum 20 
+KPX tau etaiota 20 
+KPX tau theta1 -20 
+KPX tau eta 20 
+KPX tau nu 20 
+KPX tau psi 20 
+KPX tau theta 20 
+KPX tau upsilon 20 
+KPX tau lenis -40 
+KPX tau acutegreek -40 
+KPX tau upsilonacute 20 
+KPX tau upsilongrave 20 
+KPX tau upsiloncircum 20 
+KPX tau etaacute 20 
+KPX tau etagrave 20 
+KPX tau etacircum 20 
+KPX tau etaiotaacute 20 
+KPX tau etaiotagrave 20 
+KPX tau etaiotacircum 20 
+KPX upsilon sampi -60 
+KPX upsilon lenis -40 
+KPX upsilon acutegreek -40 
+KPX omega sampi -80 
+KPX omega lenis -40 
+KPX omega acutegreek -40 
+KPX xi quoteright 40 
+KPX xi quotedblright 40 
+KPX xi sampi 40 
+KPX xi koppa 50 
+KPX xi koppa1 50 
+KPX xi digamma 40 
+KPX xi rho1 20 
+KPX xi beta 40 
+KPX xi lambda 40 
+KPX xi mu 40 
+KPX xi rho 40 
+KPX xi theta1 20 
+KPX xi chi 20 
+KPX xi lenis 40 
+KPX xi acutegreek 40 
+KPX xi parenright 60 
+KPX xi braceright 60 
+KPX xi bracketright 60 
+KPX xi asterisk 60 
+KPX psi sampi -20 
+KPX psi lenis -40 
+KPX psi acutegreek -40 
+KPX zeta quotedblright 60 
+KPX zeta quoteright 60 
+KPX zeta sampi 70 
+KPX zeta koppa 50 
+KPX zeta koppa1 50 
+KPX zeta theta1 40 
+KPX zeta digamma 40 
+KPX zeta rho1 20 
+KPX zeta beta 40 
+KPX zeta chi 20 
+KPX zeta delta 20 
+KPX zeta rho 40 
+KPX zeta mu 40 
+KPX zeta eta -60 
+KPX zeta lambda 40 
+KPX zeta pi -40 
+KPX zeta tau -60 
+KPX zeta lenis 60 
+KPX zeta acutegreek 60 
+KPX zeta etaacute -60 
+KPX zeta etagrave -60 
+KPX zeta etacircum -60 
+KPX zeta etaiotaacute -60 
+KPX zeta etaiotagrave -60 
+KPX zeta etaiotacircum -60 
+KPX zeta parenright 60 
+KPX zeta braceright 60 
+KPX zeta bracketright 60 
+KPX zeta asterisk 60 
+KPX quotedblleft Alpha -130 
+KPX quotedblleft Omicron -20 
+KPX quotedblleft Omega -60 
+KPX quotedblleft Delta -150 
+KPX quotedblleft Lambda -130 
+KPX quotedblleft Theta -20 
+KPX quotedblleft Phi -20 
+KPX iotaasperacute delta 40 
+KPX iotalenisacute delta 40 
+KPX iotaaspergrave delta 40 
+KPX iotalenisgrave delta 40 
+KPX iotacircum delta 40 
+KPX iotaaspercircum delta 40 
+KPX iotaleniscircum delta 40 
+KPX iotadieresis delta 40 
+KPX iotadieresisacute delta 40 
+KPX iotadieresisgrave delta 40 
+KPX aspercircum Alpha -150 
+KPX aspercircum Omicron -40 
+KPX aspercircum Omega -80 
+KPX leniscircum Alpha -150 
+KPX leniscircum Omicron -40 
+KPX leniscircum Omega -80 
+KPX asperacute Alpha -150 
+KPX asperacute Omicron -40 
+KPX asperacute Omega -80 
+KPX lenisacute Alpha -150 
+KPX lenisacute Omicron -40 
+KPX lenisacute Omega -80 
+KPX aspergrave Alpha -150 
+KPX aspergrave Omicron -40 
+KPX aspergrave Omega -80 
+KPX lenisgrave Alpha -150 
+KPX lenisgrave Omicron -40 
+KPX lenisgrave Omega -80 
+KPX alphaasper eta -50 
+KPX alphaasper etaacute -50 
+KPX alphaasper etagrave -50 
+KPX alphaasper etacircum -50 
+KPX alphaasper etaiotaacute -50 
+KPX alphaasper etaiotagrave -50 
+KPX alphaasper etaiotacircum -50 
+KPX alphaasper etaiota -50 
+KPX alphalenis eta -50 
+KPX alphalenis etaacute -50 
+KPX alphalenis etagrave -50 
+KPX alphalenis etacircum -50 
+KPX alphalenis etaiotaacute -50 
+KPX alphalenis etaiotagrave -50 
+KPX alphalenis etaiotacircum -50 
+KPX alphalenis etaiota -50 
+KPX alphaacute eta -50 
+KPX alphaacute etaiota -50 
+KPX alphaasperacute eta -50 
+KPX alphaasperacute etaiota -50 
+KPX alphalenisacute eta -50 
+KPX alphalenisacute etaiota -50 
+KPX alphagrave eta -50 
+KPX alphagrave etaiota -50 
+KPX alphaaspergrave eta -50 
+KPX alphaaspergrave etaiota -50 
+KPX alphalenisgrave eta -50 
+KPX alphalenisgrave etaiota -50 
+KPX alphacircum eta -50 
+KPX alphacircum etaiota -50 
+KPX alphaaspercircum eta -50 
+KPX alphaaspercircum etaiota -50 
+KPX alphaleniscircum eta -50 
+KPX alphaleniscircum etaiota -50 
+KPX alphaiotaasper eta -50 
+KPX alphaiotaasper etaacute -50 
+KPX alphaiotaasper etagrave -50 
+KPX alphaiotaasper etacircum -50 
+KPX alphaiotaasper etaiotaacute -50 
+KPX alphaiotaasper etaiotagrave -50 
+KPX alphaiotaasper etaiotacircum -50 
+KPX alphaiotaasper etaiota -50 
+KPX alphaiotalenis etaiotaacute -50 
+KPX alphaiotalenis etaiotagrave -50 
+KPX alphaiotalenis etaiotacircum -50 
+KPX alphaiotalenis etaacute -50 
+KPX alphaiotalenis etagrave -50 
+KPX alphaiotalenis etacircum -50 
+KPX alphaiotalenis eta -50 
+KPX alphaiotalenis etaiota -50 
+KPX alphaiotaacute eta -50 
+KPX alphaiotaacute etaiota -50 
+KPX alphaiotaasperacute eta -50 
+KPX alphaiotaasperacute etaiota -50 
+KPX alphaiotalenisacute eta -50 
+KPX alphaiotalenisacute etaiota -50 
+KPX alphaiotagrave eta -50 
+KPX alphaiotagrave etaiota -50 
+KPX alphaiotaaspergrave eta -50 
+KPX alphaiotaaspergrave etaiota -50 
+KPX alphaiotalenisgrave eta -50 
+KPX alphaiotalenisgrave etaiota -50 
+KPX alphaiotacircum eta -50 
+KPX alphaiotacircum etaiota -50 
+KPX alphaiotaaspercircum eta -50 
+KPX alphaiotaaspercircum etaiota -50 
+KPX alphaiotaleniscircum eta -50 
+KPX alphaiotaleniscircum etaiota -50 
+KPX etaasper mu 40 
+KPX etaasper rholenis 20 
+KPX etaasper rhoasper 20 
+KPX etaasper rho1lenis 20 
+KPX etaasper rho1asper 20 
+KPX etaasper rho 20 
+KPX etaasper rho1 20 
+KPX etalenis mu 40 
+KPX etalenis rholenis 20 
+KPX etalenis rhoasper 20 
+KPX etalenis rho1lenis 20 
+KPX etalenis rho1asper 20 
+KPX etalenis rho 20 
+KPX etalenis rho1 20 
+KPX etaacute mu 40 
+KPX etaacute rholenis 20 
+KPX etaacute rhoasper 20 
+KPX etaacute rho1lenis 20 
+KPX etaacute rho1asper 20 
+KPX etaacute rho 20 
+KPX etaacute rho1 20 
+KPX etaasperacute mu 40 
+KPX etaasperacute rholenis 20 
+KPX etaasperacute rhoasper 20 
+KPX etaasperacute rho1lenis 20 
+KPX etaasperacute rho1asper 20 
+KPX etaasperacute rho 20 
+KPX etaasperacute rho1 20 
+KPX etalenisacute mu 40 
+KPX etalenisacute rholenis 20 
+KPX etalenisacute rhoasper 20 
+KPX etalenisacute rho1lenis 20 
+KPX etalenisacute rho1asper 20 
+KPX etalenisacute rho 20 
+KPX etalenisacute rho1 20 
+KPX etagrave mu 40 
+KPX etagrave rholenis 20 
+KPX etagrave rhoasper 20 
+KPX etagrave rho1lenis 20 
+KPX etagrave rho1asper 20 
+KPX etagrave rho 20 
+KPX etagrave rho1 20 
+KPX etaaspergrave mu 40 
+KPX etaaspergrave rholenis 20 
+KPX etaaspergrave rhoasper 20 
+KPX etaaspergrave rho1lenis 20 
+KPX etaaspergrave rho1asper 20 
+KPX etaaspergrave rho 20 
+KPX etaaspergrave rho1 20 
+KPX etalenisgrave mu 40 
+KPX etalenisgrave rholenis 20 
+KPX etalenisgrave rhoasper 20 
+KPX etalenisgrave rho1lenis 20 
+KPX etalenisgrave rho1asper 20 
+KPX etalenisgrave rho 20 
+KPX etalenisgrave rho1 20 
+KPX etacircum mu 40 
+KPX etacircum rholenis 20 
+KPX etacircum rhoasper 20 
+KPX etacircum rho1lenis 20 
+KPX etacircum rho1asper 20 
+KPX etacircum rho 20 
+KPX etacircum rho1 20 
+KPX etaaspercircum mu 40 
+KPX etaaspercircum rholenis 20 
+KPX etaaspercircum rhoasper 20 
+KPX etaaspercircum rho1lenis 20 
+KPX etaaspercircum rho1asper 20 
+KPX etaaspercircum rho 20 
+KPX etaaspercircum rho1 20 
+KPX etaleniscircum mu 40 
+KPX etaleniscircum rholenis 20 
+KPX etaleniscircum rhoasper 20 
+KPX etaleniscircum rho1lenis 20 
+KPX etaleniscircum rho1asper 20 
+KPX etaleniscircum rho 20 
+KPX etaleniscircum rho1 20 
+KPX etaiotaasper mu 40 
+KPX etaiotaasper rholenis 20 
+KPX etaiotaasper rhoasper 20 
+KPX etaiotaasper rho1lenis 20 
+KPX etaiotaasper rho1asper 20 
+KPX etaiotaasper rho 20 
+KPX etaiotaasper rho1 20 
+KPX etaiotalenis mu 40 
+KPX etaiotalenis rholenis 20 
+KPX etaiotalenis rhoasper 20 
+KPX etaiotalenis rho1lenis 20 
+KPX etaiotalenis rho1asper 20 
+KPX etaiotalenis rho 20 
+KPX etaiotalenis rho1 20 
+KPX etaiotaacute mu 40 
+KPX etaiotaacute rholenis 20 
+KPX etaiotaacute rhoasper 20 
+KPX etaiotaacute rho1lenis 20 
+KPX etaiotaacute rho1asper 20 
+KPX etaiotaacute rho 20 
+KPX etaiotaacute rho1 20 
+KPX etaiotaasperacute mu 40 
+KPX etaiotaasperacute rholenis 20 
+KPX etaiotaasperacute rhoasper 20 
+KPX etaiotaasperacute rho1lenis 20 
+KPX etaiotaasperacute rho1asper 20 
+KPX etaiotaasperacute rho 20 
+KPX etaiotaasperacute rho1 20 
+KPX etaiotalenisacute mu 40 
+KPX etaiotalenisacute rholenis 20 
+KPX etaiotalenisacute rhoasper 20 
+KPX etaiotalenisacute rho1lenis 20 
+KPX etaiotalenisacute rho1asper 20 
+KPX etaiotalenisacute rho 20 
+KPX etaiotalenisacute rho1 20 
+KPX etaiotagrave mu 40 
+KPX etaiotagrave rholenis 20 
+KPX etaiotagrave rhoasper 20 
+KPX etaiotagrave rho1lenis 20 
+KPX etaiotagrave rho1asper 20 
+KPX etaiotagrave rho 20 
+KPX etaiotagrave rho1 20 
+KPX etaiotaaspergrave mu 40 
+KPX etaiotaaspergrave rholenis 20 
+KPX etaiotaaspergrave rhoasper 20 
+KPX etaiotaaspergrave rho1lenis 20 
+KPX etaiotaaspergrave rho1asper 20 
+KPX etaiotaaspergrave rho 20 
+KPX etaiotaaspergrave rho1 20 
+KPX etaiotalenisgrave mu 40 
+KPX etaiotalenisgrave rholenis 20 
+KPX etaiotalenisgrave rhoasper 20 
+KPX etaiotalenisgrave rho1lenis 20 
+KPX etaiotalenisgrave rho1asper 20 
+KPX etaiotalenisgrave rho 20 
+KPX etaiotalenisgrave rho1 20 
+KPX etaiotacircum mu 40 
+KPX etaiotacircum rholenis 20 
+KPX etaiotacircum rhoasper 20 
+KPX etaiotacircum rho1lenis 20 
+KPX etaiotacircum rho1asper 20 
+KPX etaiotacircum rho 20 
+KPX etaiotacircum rho1 20 
+KPX etaiotaaspercircum mu 40 
+KPX etaiotaaspercircum rholenis 20 
+KPX etaiotaaspercircum rhoasper 20 
+KPX etaiotaaspercircum rho1lenis 20 
+KPX etaiotaaspercircum rho1asper 20 
+KPX etaiotaaspercircum rho 20 
+KPX etaiotaaspercircum rho1 20 
+KPX etaiotaleniscircum mu 40 
+KPX etaiotaleniscircum rholenis 20 
+KPX etaiotaleniscircum rhoasper 20 
+KPX etaiotaleniscircum rho1lenis 20 
+KPX etaiotaleniscircum rho1asper 20 
+KPX etaiotaleniscircum rho 20 
+KPX etaiotaleniscircum rho1 20 
+KPX primebase digamma 40 
+KPX primebase koppa1 -60 
+KPX primebase beta 40 
+KPX primebase chi 40 
+KPX primebase eta -40 
+KPX primebase mu 40 
+KPX primebase pi -40 
+KPX primebase tau -60 
+KPX primebase rho 40 
+EndKernPairs 
+EndKernData 
+EndFontMetrics 
+

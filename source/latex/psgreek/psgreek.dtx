@@ -1,0 +1,635 @@
+% \iffalse meta comment
+% This file is part of the PSGREEK project version \fileversion
+% -------------------------------------------------------------
+%
+% It may be distributed under the terms of the LaTeX Project Public
+% License, as described in lppl.txt in the base LaTeX distribution.
+% Either version 1.0 or, at your option, any later version.
+% Copyright (C) 2001--2003 by Alexej Kryukov and Christian Justen.
+% Please report errors to: A.M. Kryukov <basileia@yandex.ru>
+% \fi
+%
+% \iffalse
+%
+%<*dtx>
+\ProvidesFile{psgreek.dtx}
+%</dtx>
+%
+%<*driver>
+\ProvidesFile{psgreek.dtx}
+\documentclass{ltxdoc}
+\sloppy
+\GetFileInfo{psgreek.dtx}
+\def\fileversion{0.6}
+\def\filedate{16 Apr 2003}
+\def\docdate{16 Apr 2003}
+
+\newcommand*\file[1]{\texttt{#1}}
+\title{Typesetting Greek with the psgreek package
+        \thanks{This file
+        has version number \fileversion, last
+        revised on \filedate.}}
+\author{Alexej Kryukov\and Christian Justen}
+
+\begin{document}
+\maketitle
+\DocInput{psgreek.dtx}
+\end{document}
+%</driver>
+%
+% \fi
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \changes{v0.2}{2002/10/12}{First public release}
+% \changes{v0.5}{2003/03/06}
+%      {Former psgreek1 and psgreek packages joined together in one
+%      psgreek package.}
+% \changes{v0.5}{2003/03/06}
+%      {The psgreek.sty file was greatly improved (thanks to Christian
+%      Justen!).}
+% \changes{v0.5}{2003/03/06}
+%      {Removed support for so-called LEL encoding. Well, it has no
+%      chance to became a kind of a standard anyway.}
+% \changes{v0.5}{2003/03/06}
+%      {Added Unicode *.opl and *.ofm files for use with Omega.}
+% \changes{v0.5}{2003/03/06}
+%      {Added vTeX/Free support.}
+% \changes{v0.5}{2003/03/06}
+%      {The documentation was totally rewritten using
+%      the ltxdoc package.}
+% \changes{v0.6}{2003/04/16}
+%      {Fixed trivial bug with the |\ProvidesPackage| argument.}
+% \changes{v0.6}{2003/04/16}
+%      {Additional enchancements by Christian Justen.}
+% \changes{v0.6}{2003/05/08}
+%      {Changed description for the font installation procedure.}
+% \changes{v0.7}{2003/10/11}
+%      {Fixed glyph `chi' in the Greek Oxonia font.}
+%
+% \MakeShortVerb{\|}
+%
+% \begin{abstract}
+% The `psgreek' font package provides \LaTeX\ support for some popular
+% Type~1 Greek fonts using the WinGreek encoding.
+% \end{abstract}
+%
+% \section{Fonts included}
+%
+% The \file{psgreek} package includes the following Greek fonts:
+%
+% \begin{itemize}
+%
+% \item The original WinGreek font by P.~Gentry and A.~Fountain.
+%
+% \item The \emph{Greek Garamond} font by Carmelo Lupini, which can be
+% downloaded from http://www.geocities.com/SoHo/Workshop/3799/download.htm.
+% I simply converted it to the Type 1 format and slightly modified the
+% encoding.
+%
+% \item The \emph{Greek Oxonia} font. I don't know anything about its origin,
+% however, I hope it can be freely distributed. I simply converted it to the
+% Type 1 format.
+%
+% The three fonts mentioned above don't contain any kerning pairs.
+%
+% \item Two high-quality Type 1 fonts by Ralph Hancock: Greek Old Face
+% and Milan Greek. These fonts are copyrighted. I included them to
+% the \file{psgreek} package from the author's permission, however,
+% if you regularly use them, you have to pay registration fee to the
+% author. For copyright notices and license agreement for these fonts
+% see the `greekof.txt' and `milan.txt' files, included in this package.
+%
+% \end{itemize}
+%
+% \section{Encoding}
+%
+% Although all fonts included in this package follow the same WinGreek
+% encoding, I decided that this encoding is not suitable for \TeX\ by
+% itself, as well as any other font encoding designed for use with
+% WYSIWYG applications. Probably you know that there are some specific
+% features, common for all standard \TeX-specific font encodings. For example,
+% \TeX\ has access to all 256 slots in the font, including first 32 positions.
+% This means that we have additional place for some useful characters.
+%
+% That's why it could be good idea to use so-called virtual
+% fonts, taking some glyphs from physical Type 1 fonts and rearranging
+% their mapping according to an internal \TeX\ encoding. Although there is
+% no officially supported Greek font encoding for \TeX, we should consider
+% the Greek fonts designed by Claudio Beccari as a kind of standard, since
+% Babel's Greek language support is based on this package. So I had to
+% reencode my WinGreek fonts to this encoding (so-called LGR), and
+% prepared a set of virtual fonts performing this task. However, there
+% are two significant differences between Greek font encodings used
+% in the CB Greek fonts and in my \file{psgreek} package:
+%
+% \begin{itemize}
+%
+% \item In the CB Greek font package Greek perispomeni is mapped to
+% ASCII tilde (\textasciitilde). I think, it is very inconvenient, since
+% in normal \LaTeX\ (unless we loaded the \file{babel} package with the
+% \file{polutonikogreek} option) this character is used for non-breaking
+% space. In the \file{psgreek} fonts I moved perispomeni to another
+% slot, corresponding to the `=' sign, as in some older Greek packages.
+% However, the `\textasciitilde' symbol still produces Greek perispomeni
+% in combinations with vowels as well as the `=' sign does.
+%
+% \item All Greek font packages for \TeX\ traditionally included
+% some ligatures for sigma, so that it is possible to type the same symbol
+% `s' each time we need this letter, and its final form will be produced
+% automatically in certain conditions. I think, this approach is essentially
+% incorrect, since in some situations using of the final sigma
+% can't be controlled by a rather simple algorithm. What's why \emph{psgreek
+% fonts don't include any ligatures for final sigma}; in order to produce
+% this form you have to type it manually (this symbol corresponds to the
+% Latin letter `c' in the Babel's transliteration).
+%
+% \end{itemize}
+%
+% \section{Moving to Omega}
+%
+% Although the Babel system has rather good support for polytonic Greek,
+% still there are some problems, \emph{which can't be resolved on any 8-bit
+% platform}. Suppose, for example, that you have typed the pronoun
+% \verb|A>ut'oc|. Here the combination \verb|>u| is a ligature, used to
+% produce the symbol with the code 0xCE, which corresponds to \emph{upsilon
+% with psili} in the LGR encoding. However, using this ligature breaks
+% kerning between capital \emph{Alpha} and \emph{upsilon with psili}. Of
+% course, you can type the later symbol directly, for example:
+% \verb|A^^cet'oc|. In this case you will get a correct kerning, but your
+% hyphenation will be broken, since Greek hyphenation patterns contain
+% something like \verb|a>u1|, but not \verb|a^^ce1|. And even if
+% you add such a pattern, the result will be rather unexpected, since you
+% have to additionally set \verb|\catcode| and \verb|\lccode| for the 0xCE
+% symbol, which will affect some other symbols in your multilingual texts.
+%
+% With Omega we haven't such problems. First, we needn't any ligatures,
+% since Omega either takes all Greek accented letters directly from a
+% *.tex file using utf-8 or ucs-2 encoding, or produces them with its own
+% translation processes. Second, we can use Unicode hyphenation patterns,
+% and set \verb|\catcode| and \verb|\lccode| for our Greek letters as
+% necessary. That's why in this release of the \file{psgreek} package
+% I included Unicode virtual fonts for Omega in the Omega's ovf format.
+% However, these fonts are not compatible with Yannis Haralambous' default
+% omlgc font, since they use more strict Unicode encoding. If you wish
+% to use \file{psgreek} package with Omega, download my \file{antomega}
+% package from /systems/omega/contrib and load it instead of the default
+% \file{omega.sty} file.
+%
+% \section{Installation}
+%
+% Below, we assume that your \TeX\ system is compliant to the TDS
+% (\TeX\ Directory Structure) standard. If it is not so, refer to
+% documentation of your \TeX\ system for the proper locations of files of
+% various types.
+%
+% To install the \file{psgreek} font package in teTeX, fpTeX,
+% MikTeX or VTeX/Free systems:
+%
+% \begin{enumerate}
+%
+% \item Copy all *.pfb, *.afm, *.tfm, *.vf, *.ofm and *.ovf files to
+% the appropriate subdirectories in your \file{.../texmf/fonts} directory.
+%
+% \item Create a subdirectory called \file{psgreek} in your
+% \file{.../texmf/tex/latex directory} and put all *.fd files and the
+% \file{psgreek.sty} file here. Note that all *.fd files having the `ut1'
+% prefix in their names are needed only for Omega, and so you can
+% put them to \file{../texmf/omega/lambda/psgreek} instead.
+%
+% \item Put the \file{dvips/config/psgreek.map} file to your
+% \file{.../texmf/dvips/config} directory.
+%
+% \item (for VTeX/Free) Copy the \file{vtex/config/psgreek.ali} file
+% to your \file{.../texmf/vtex/config/} directory.
+%
+% \item Instruct your TeX (pdftex, vtex, etc.) or drivers (dvips, dvipdfm,
+% etc.) to use your new fonts. To accomplish this, do one of the following
+% points which corresponds to your TeX system (if it is not listed here,
+% please refer to the documentation).
+%
+% \begin{enumerate}
+%
+% \item (on teTeX, fpTeX and MikTeX) Instruct dvips and pdftex to use these 
+% fonts:
+%
+% \begin{enumerate}
+%
+% \item edit the file .../texmf/web2c/updmap.cfg and add the following line:
+%
+% \begin{verbatim}
+% Map psgreek.map
+% \end{verbatim}
+%
+% \item run the updmap script.
+%
+% \end{enumerate}
+%
+% \item If your TeX system does not have tools like updmap for maintaining
+% global MAP files (e.~g. older MikTeX versions), you can instead configure
+% each program which uses the Type 1 fonts:
+%
+% \begin{enumerate}
+%
+% \item Edit the file \file{.../texmf/dvips/config/config.ps} and add 
+% the following line:
+%
+% \begin{verbatim}
+% p + psgreek.map
+% \end{verbatim}
+%
+% \item If you use pdftex, edit the file
+% \file{.../texmf/pdftex/pdftex.cfg} and add the following line:
+%
+% \begin{verbatim}
+% map +psgreek.map
+% \end{verbatim}
+%
+% \end{enumerate}
+%
+% \item (for VTeX/Free only) Edit the files
+% \file{.../texmf/vtex/config/ps.fm} and
+% \file{.../texmf/vtex/config/pdf.fm}, and add the following
+% line into the TYPE1 section:
+%
+% \begin{verbatim}
+% cm-super.ali
+% \end{verbatim}
+%
+% \end{enumerate}
+%
+% \item (not for VTeX/Free) Update the filename search database:
+% run "mktexlsr" on teTeX, TeX Live, or fpTeX;
+% run "initexmf.exe -u" on MikTeX (or do the same via a menu item).
+%
+% \end{enumerate}
+%
+% \section{Usage}
+%
+% The \file{psgreek} package requires \file{babel} to be loaded either with
+% `greek' or `polutonikogreek' option. So, put in your preamble something
+% like
+%
+% \begin{verbatim}
+% \usepackage[polutonikogreek,english]{babel}
+% \end{verbatim}
+%
+% \textbf{After} loading \file{babel} you can load \file{psgreek},
+% as most \LaTeX\ packages, with the |\usepackage| command.
+%
+% \file{psgreek} supports the following package options:
+% |regular|, |garamond|, |oxonia|, |oldface|, |milan|, |kerkis|,
+% |cmr|, |cmss|, and |cmtt|.
+% These options correspond to the Greek fonts that are supported by
+% \file{psgreek} by default; using these options will make \file{psgreek}
+% use a certain Greek font as roman font family whenever Babel switches to
+% Greek text.
+%
+% In addition, it is now possible to use package options in \textsf{keyval} syntax.
+% With these options it is possible to change the Greek sans serif or
+% typewriter fonts. The keys used are |rmfont| (roman font), |sffont|
+% (sans serif font)  and |ttfont| (typewriter font). So the user can
+% now say something like |\usepackage[sffont=oxonia,garamond]{psgreek}|
+% (or equally |\usepackage[sffont=oxonia,rmfont=garamond]{psgreek}|).
+% (These are just examples, and are not meant serious!)
+%
+% \section[The psgreek.sty code]{The psgreek.sty code\footnote{The
+% following code was written mainly by Christian Justen
+% \textless{}christian@justen-mack.de\textgreater.}}
+%
+% \subsection{Beginning of the Package}
+%
+%    \begin{macrocode}
+%<psgreek>\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{psgreek}
+    [2003/04/16 Babel support for Greek PostScript fonts]
+\RequirePackage{keyval}
+%    \end{macrocode}
+%
+% First, we have to check if Babel was loaded either with `greek' or
+% `polutonikogreek' option.
+%
+%    \begin{macrocode}
+\@ifundefined{greektext}{%
+        \PackageError{psgreek.sty}%
+            {Sorry, but probably you did not load^^J
+            babel with greek option!}%
+            {The psgreek package requires the
+            babel system to be loaded^^J%
+            either with `greek' or `polutonikogreek' option.}%
+    }{%
+    }
+%    \end{macrocode}
+%
+% \subsection{Greek font declarations}
+%
+% \begin{macro}{\DeclareGreekFont}
+% The \file{psgreek} user interface works with font name aliases rather
+% than the font names themselves, so the user does not have to remember
+% the sometimes rather cryptic font names. E.\,g., instead of |fof| or |hml| we
+% use the aliases |oxonia| and |milan|. These aliases have to be declared
+% before they can be used. This is done with the |\DeclareGreekFont|
+% command, which takes two arguments: the alias  and the `real' font name,
+% e.\,g. |\DeclareGreekFont{oxonia}{fof}|. \file{psgreek} itself uses this
+% command to declare the aliases for the Greek fonts it supports by default.
+%
+% If you want to use an additional Greek font, you have to make it known to
+% \file{psgreek} in the same way. (This user defined font is, of course,
+% only accessible via the |\greekfont| command, not via the package options!)
+%
+%    \begin{macrocode}
+\newcommand{\DeclareGreekFont}[2]{%
+    \expandafter\def\csname greekfont@#1\endcsname{#2}%
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\check@forgreekfont}
+% The |\check@forgreekfont| command tests whether a font alias has been
+% declared with the |\DeclareGreekFont| command and sets either
+% |\@tempswatrue| or |\@tempswafalse|.
+%
+%    \begin{macrocode}
+\newcommand{\check@forgreekfont}[1]{%
+    \@ifundefined{greekfont@#1}{%
+            \PackageError{psgreek.sty}%
+                {Greek font #1 not yet defined!}%
+                {In order to use a Greek font
+                (compatible to the babel system)^^J%
+                you have to declare it using the
+                \string\DeclareGreekFont\space command:^^J%
+                \string\DeclareGreekFont{#1}{nnn}^^J%
+                where nnn specifies the font family.}%
+            \@tempswafalse%
+        }{%
+            \@tempswatrue%
+        }%
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% We can now use |\DeclareGreekFont| to provide some meaningful names for
+% the fonts which can be used with the \file{psgreek} package.
+%
+% \begin{itemize}
+%
+% \item Original WinGreek font, of course:
+%
+%    \begin{macrocode}
+\DeclareGreekFont{regular}{wgr}
+%    \end{macrocode}
+%
+% \item Greek Garamond by Carmelo Lupini:
+%
+%    \begin{macrocode}
+\DeclareGreekFont{garamond}{fgm}
+%    \end{macrocode}
+%
+% \item Greek Oxonia font:
+%
+%    \begin{macrocode}
+\DeclareGreekFont{oxonia}{fof}
+%    \end{macrocode}
+%
+% \item Two fonts by Ralph Hancock:
+%
+%    \begin{macrocode}
+\DeclareGreekFont{oldface}{hof}
+\DeclareGreekFont{milan}{hml}
+%    \end{macrocode}
+%
+% \item Kerkis is a font family created by Antonis Tsolomitis.
+% It comes with its own \LaTeX\ package, but, if you use kerkis
+% only for your Greek text, you may want to load it using
+% \file{psgreek} instead.
+%
+%    \begin{macrocode}
+\DeclareGreekFont{kerkis}{mak}
+%    \end{macrocode}
+%
+% \item And finally the roman, sans serif and typewriter style families
+% of the `original' Computer Modern Greek fonts:
+%
+%    \begin{macrocode}
+\DeclareGreekFont{cmr}{cmr}
+\DeclareGreekFont{cmss}{cmss}
+\DeclareGreekFont{cmtt}{cmtt}
+%    \end{macrocode}
+%
+% \end{itemize}
+%
+% \subsection{Font selection commands}
+%
+% We need some variables which will be used to store the three Greek
+% font families:
+%
+% \begin{macro}{\greek@rmfamily}
+% the roman family,
+%    \begin{macrocode}
+\let\greek@rmfamily\relax
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\greek@sffamily}
+% the sans serif family,
+%    \begin{macrocode}
+\let\greek@sffamily\relax
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\greek@ttfamily}
+% and the typewriter family.
+%    \begin{macrocode}
+\let\greek@ttfamily\relax
+%    \end{macrocode}
+% \end{macro}
+%
+% Now we define a set of keys: |rmfont|, |sffont| and |ttfont|. They are used to
+% set the font variables to their proper value following the \textsf{keyval} syntax.
+% These keys can be used in the optional argument of the |\greekfont| command and
+% in the package options.
+%
+%    \begin{macrocode}
+\define@key{psgreek}{rmfont}{%
+    \check@forgreekfont{#1}%
+    \if@tempswa\def\greek@rmfamily{\csname greekfont@#1\endcsname}\fi%
+}
+\define@key{psgreek}{sffont}{%
+    \check@forgreekfont{#1}%
+    \if@tempswa\def\greek@sffamily{\csname greekfont@#1\endcsname}\fi%
+}
+\define@key{psgreek}{ttfont}{%
+    \check@forgreekfont{#1}%
+    \if@tempswa\def\greek@ttfamily{\csname greekfont@#1\endcsname}\fi%
+}
+%    \end{macrocode}
+%
+% \begin{macro}{\greekfont}
+%
+% You can specify the Greek fonts to be used not only via the package options,
+% but also within your document using the |\greekfont| command.
+% |\greekfont| takes one argument (like
+% |\greekfont{garamond}|) and changes the Greek roman font family accordingly. (This
+% argument can be empty, though!)
+%
+% Additionally, |\greekfont| can take an optional argument, containing an option list
+% in \textsf{keyval} syntax. The keys are the same as for the package options.
+% It is possible to say
+%
+% \begin{verbatim}
+% \greekfont[sffont=oxonia]{garamond}
+% \end{verbatim}
+%
+% or even
+%
+% \begin{verbatim}
+% \greekfont[rmfont=garamond,sffont=oxonia]{}
+% \end{verbatim}
+%
+% The |\greekfont| command simply passes its arguments to \textsf{keyval}'s
+% |\setkeys| mechanism.
+%
+%    \begin{macrocode}
+\newcommand{\greekfont}[2][]{%
+    \def\@temp{#2}%
+    \ifx\@temp\@empty\else\setkeys{psgreek}{rmfont=#2}\fi%
+    \setkeys{psgreek}{#1}%
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Declaration of options and default values}
+%
+% We want a set of options with names corresponding to the aliases
+% we have already defined. These options specify the roman family only!
+%
+%    \begin{macrocode}
+\DeclareOption{regular}{\greekfont{regular}}
+\DeclareOption{garamond}{\greekfont{garamond}}
+\DeclareOption{oxonia}{\greekfont{oxonia}}
+\DeclareOption{oldface}{\greekfont{oldface}}
+\DeclareOption{milan}{\greekfont{milan}}
+\DeclareOption{kerkis}{\greekfont{kerkis}}
+\DeclareOption{cmr}{\greekfont{cmr}}
+\DeclareOption{cmss}{\greekfont{cmss}}
+\DeclareOption{cmtt}{\greekfont{cmtt}}
+%    \end{macrocode}
+%
+% But we also want to have package options in \textsf{keyval} syntax that
+% allow us to specify the sans serif and typewriter families easily.
+% This is done by passing all unknown options as optional arguments
+% to the |\greekfont| command.
+%
+%    \begin{macrocode}
+\DeclareOption*{%
+    \edef\@temp{\noexpand\greekfont[\CurrentOption]{}}%
+    \@temp%
+}
+%    \end{macrocode}
+%
+% The original WinGreek font is the most commonly used, so we load it by
+% default as roman font. Additionally we load |cmss| and |cmtt| as default
+% sans serif and typewriter fonts. And of course we have to process the
+% option list.
+%
+%    \begin{macrocode}
+\greekfont[sffont=cmss,ttfont=cmtt]{regular}
+\ProcessOptions*
+%    \end{macrocode}
+%
+% \subsection{Language switching commands}
+%
+% \DescribeEnv{greek}
+% \DescribeMacro{\localgreek}
+% Using Babel's standard language switching commands is sometimes a bit
+% tiresome. So we provide the |greek| environment and the |\localgreek|
+% command to make things a bit easier, especially since they are compatible
+% with language support packages used with Omega.
+%
+%    \begin{macrocode}
+\newenvironment{greek}{\begin{otherlanguage}{greek}}{\end{otherlanguage}}
+\newcommand{\localgreek}[1]{\foreignlanguage{greek}{#1}}
+%    \end{macrocode}
+%
+%
+% \subsection{Redefining some commands provided by Babel}
+%
+% First we need some variables to store the current font families
+% (we need those again when we go back to `normal' non-Greek text).
+%
+%    \begin{macrocode}
+\let\old@rmdefault\relax
+\let\old@sfdefault\relax
+\let\old@ttdefault\relax
+\let\old@font@family\relax
+%    \end{macrocode}
+%
+% |\greektext| is executed by Babel every time we switch to Greek. We modify
+% this command so that it tries to detect whether the current font family is
+% a sans serif or typewriter family. If so, we use the appropriate Greek
+% families, otherwise we use the Greek roman family.
+%
+%    \begin{macrocode}
+\DeclareRobustCommand{\greektext}{%
+  \let\old@font@family\f@family%
+  \let\old@rmdefault\rmdefault%
+  \let\old@sfdefault\sfdefault%
+  \let\old@ttdefault\ttdefault%
+  \fontencoding{LGR}%
+  \edef\@temp{\sfdefault}%
+  \ifx\f@family\@temp%
+    \fontfamily{\greek@sffamily}%
+  \else%
+    \edef\@temp{\ttdefault}%
+    \ifx\f@family\@temp%
+        \fontfamily{\greek@ttfamily}%
+    \else%
+        \fontfamily{\greek@rmfamily}%
+    \fi%
+  \fi%
+  \selectfont%
+  \def\encodingdefault{LGR}%
+  \def\rmdefault{\greek@rmfamily}%
+  \def\sfdefault{\greek@sffamily}%
+  \def\ttdefault{\greek@ttfamily}%
+}
+%    \end{macrocode}
+%
+% |\latintext| is executed by Babel when we finish with the Greek text (and
+% in fact some times more often). We simply have to restore the old font family values.
+%
+%    \begin{macrocode}
+\DeclareRobustCommand{\latintext}{%
+  \fontencoding{\latinencoding}%
+  \ifx\old@font@family\relax\else\fontfamily{\old@font@family}\fi%
+  \selectfont%
+  \def\encodingdefault{\latinencoding}%
+  \ifx\old@rmdefault\relax\else\let\rmdefault\old@rmdefault\fi%
+  \ifx\old@sfdefault\relax\else\let\sfdefault\old@sfdefault\fi%
+  \ifx\old@ttdefault\relax\else\let\ttdefault\old@ttdefault\fi%
+}
+%    \end{macrocode}
+%
+% When we have done with the Greek text, it is better to `empty' the
+% font family variables, so no unwanted side effects can occur.
+%
+%    \begin{macrocode}
+\addto\noextrasgreek{%
+    \let\old@font@family\relax%
+    \let\old@rmdefault\relax%
+    \let\old@sfdefault\relax%
+    \let\old@ttdefault\relax%
+    }
+\let\noextraspolutonikogreek\noextrasgreek
+%    \end{macrocode}
+%
+% Now, that's it!
+%
+%    \begin{macrocode}
+\endinput
+%    \end{macrocode}
+% \iffalse
+%</psgreek>
+% \fi
+%
+% \Finale

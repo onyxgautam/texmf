@@ -1,0 +1,34 @@
+%Filename: lgrfof.fd
+%Created by: tex public
+%Created using fontinst v1.926
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{lgrfof.fd}
+   [2004/04/23 Fontinst v1.926 font definitions for LGR/fof.]
+
+\DeclareFontFamily{LGR}{fof}{}
+
+\DeclareFontShape{LGR}{fof}{m}{it}{
+   <-> fofrigr
+}{}
+
+\DeclareFontShape{LGR}{fof}{m}{n}{
+   <-> fofrigr
+}{}
+
+\DeclareFontShape{LGR}{fof}{m}{sc}{
+   <-> fofrcgr
+}{}
+
+\DeclareFontShape{LGR}{fof}{bx}{it}{<->ssub * fof/m/it}{}
+\DeclareFontShape{LGR}{fof}{b}{it}{<->ssub * fof/bx/it}{}
+\DeclareFontShape{LGR}{fof}{m}{sl}{<->ssub * fof/m/it}{}
+\DeclareFontShape{LGR}{fof}{bx}{sl}{<->ssub * fof/m/sl}{}
+\DeclareFontShape{LGR}{fof}{b}{sl}{<->ssub * fof/bx/sl}{}
+\DeclareFontShape{LGR}{fof}{bx}{n}{<->ssub * fof/m/n}{}
+\DeclareFontShape{LGR}{fof}{b}{n}{<->ssub * fof/bx/n}{}
+\DeclareFontShape{LGR}{fof}{bx}{sc}{<->ssub * fof/m/sc}{}
+\DeclareFontShape{LGR}{fof}{b}{sc}{<->ssub * fof/bx/sc}{}
+
+\endinput

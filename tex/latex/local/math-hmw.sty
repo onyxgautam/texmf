@@ -1,0 +1,200 @@
+\ProvidesPackage{math-hmw}
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{varioref}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usepackage{forest}
+\usetkzobj{all}
+\usetikzlibrary{decorations.pathreplacing,angles,quotes,trees}
+\usepackage{pgfplots}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{ragged2e}
+\usepackage[normalem]{ulem}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{etoolbox}
+\usepackage{chngcntr}
+\usepackage{csquotes}
+\usepackage[version=4]{mhchem}
+\usepackage{systeme}
+\usepackage{chemfig}
+\usepackage{yhmath}
+
+\usepackage{titlesec}
+\let\Pr\relax
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclareMathOperator\LCM{LCM}
+\DeclareMathOperator\Pr{P}
+
+\usetikzlibrary{automata,positioning}
+
+\makeatletter
+\newif\ifdavid@number
+\preto\equation{\david@numberfalse}
+\preto\endequation{\ifdavid@number\else\notag\fi}
+\patchcmd\label@in@display{\@empty}{\@empty\david@numbertrue}{}{}
+\makeatother
+
+\let\originalleft\left
+\let\originalright\right
+\renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
+\renewcommand{\right}{\aftergroup\egroup\originalright}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Instructor
+%   - Author
+%
+
+%
+% Title Page Commands
+%
+
+\newcommand{\authorfirstname}{Gautam}
+\newcommand{\authorlastname}{Manohar}
+\newcommand{\titlename}{Title}
+\newcommand{\subtitlename}{Subtitle}
+\newcommand{\shorttitlename}{Short Title}
+\newcommand{\teachername}{Teacher}
+\newcommand{\coursename}{Course}
+\newcommand{\datename}{Date}
+\newcommand{\periodname}{Period}
+
+\newcommand{\authorfirst}[1]{\renewcommand{\authorfirstname}{#1}}
+\newcommand{\authorlast}[1]{\renewcommand{\authorlastname}{#1}}
+\renewcommand{\title}[1]{\renewcommand{\titlename}{#1}}
+\newcommand{\subtitle}[1]{\renewcommand{\subtitlename}{#1}}
+\newcommand{\shorttitle}[1]{\renewcommand{\shorttitlename}{#1}}
+\newcommand{\teacher}[1]{\renewcommand{\teachername}{#1}}
+\newcommand{\course}[1]{\renewcommand{\coursename}{#1}}
+\renewcommand{\date}[1]{\renewcommand{\datename}{#1}}
+\newcommand{\period}[1]{\renewcommand{\periodname}{#1}}
+
+\AtBeginDocument{
+\begin{titlepage}
+	\centering
+	\topskip0pt
+	\vspace*{2.25in}
+	{\LARGE\bfseries\coursename: \titlename\par}
+	\vspace{0.1in}
+	{\normalsize\small{Due on \datename\ during Period \periodname\par}}
+	\vspace*{0.1in}
+	{\large\itshape\teachername\par}
+	\vspace*{3in}
+	{\large\bfseries\authorfirstname\ \authorlastname}
+\end{titlepage}
+}
+
+\pagestyle{fancy}
+\lhead{\authorfirstname\ \authorlastname}
+\chead{\coursename\ (\teachername): \textsc{\shorttitlename}}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{}
+\rfoot{Page \thepage\ of \pageref{LastPage}}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+	\nobreak\extramarks{}{Question \arabic{#1} continued on next page\ldots}\nobreak{}
+	\nobreak\extramarks{Question \arabic{#1} (cont.)}{Question \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+	\nobreak\extramarks{Question \arabic{#1} (cont.)}{Question \arabic{#1} continued on next page\ldots}\nobreak{}
+	\stepcounter{#1}
+	\nobreak\extramarks{Question \arabic{#1}}{}\nobreak{}
+}
+
+\newcounter{partCounter}
+\newcounter{q}
+\setcounter{q}{1}
+\nobreak\extramarks{Question \arabic{q}}{}\nobreak{}
+
+\numberwithin{equation}{q}
+\newcommand{\crefrangeconjunction}{--}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newcommand{\qname}{Problem}
+\newenvironment{q}[1][-1]{
+	\ifnum#1>0
+		\setcounter{q}{#1}
+	\fi
+	\section*{\qname{} \arabic{q}}
+	\setcounter{partCounter}{1}
+	\enterProblemHeader{q}
+}{
+	\exitProblemHeader{q}
+}
+
+\allowdisplaybreaks
+
+\setenumerate{label=(\alph*),itemsep=3pt,topsep=3pt}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\usepackage[labelsep=period, margin=1cm]{caption}
+\captionsetup{format=hang}
+
+\newcommand{\answer}{\subsection*{Answer}}
+\newcommand{\solution}{\subsection*{Solution}}
+\newcommand{\pt}{\subsection*{Part \Alph{partCounter}}\stepcounter{partCounter}}
+
+\newcommand{\inn}[1]{\in\left\{#1\right\}}
+\newcommand{\ninn}[1]{\not\in\left\{#1\right\}}
+\newcommand{\orr}{\qquad&\,\text{or}\qquad}
+
+\DeclareMathOperator{\sgn}{sgn}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+
+\setlength{\parindent}{15pt}
+
+\titlespacing*{\section} {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
