@@ -39,8 +39,11 @@
 
 \newcommand{\Grad}{\nabla}
 \newcommand{\Div}{\mathrm{div}\mathop{}\!}
-\newcommand{\Curl}{\nabla\times}
+\renewcommand{\div}{\mathrm{div}}
+\newcommand{\Curl}{\mathrm{curl}\mathop{}\!}
 \newcommand{\Lapl}{\Delta}
+
+\newcommand{\Riem}{\mathrm{Riem}}
 
 \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
@@ -150,7 +153,8 @@
 \DeclareMathOperator{\Proj}{Proj}
 \DeclareMathOperator{\Gal}{Gal}
 \DeclareMathOperator{\Sff}{I\!I}
-\DeclareMathOperator{\Ric}{Ric}
+
+\newcommand{\Ric}{\mathrm{Ric}}
 
 \newcommand{\vol}{\mathrm{vol}}
 
@@ -237,3 +241,5 @@
 \vcenter{\hbox{$#2#3$ }}\kern-.6\wd0}}
 \def\avint{\Xint-}
 \newcommand{\course}{}
+
+\newcommand{\lin}[1]{\overset{\scriptscriptstyle\mathrm{(l)}}{#1}}

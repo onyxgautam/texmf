@@ -8,40 +8,10 @@
   linkcolor=BrickRed,
   citecolor=ForestGreen,
   urlcolor=BrickRed,
+  bookmarksdepth=3
 }
-
-\usepackage{cleveref}
 \usepackage{amsthm}
-\usepackage{thmtools}
-\declaretheorem[numberwithin=section]{theorem}
-\declaretheorem[sibling=theorem]{lemma, proposition, corollary, claim, goal, conjecture}
-\declaretheorem[style=definition, sibling=theorem]{definition}
-\declaretheorem[style=definition, numbered=no]{notation}
-\declaretheorem[style=remark, sibling=theorem]{remark}
-\declaretheorem[style=remark, sibling=theorem, name={Example}]{ex}
-\newcommand{\marginnote}{\footnote}
-\newcommand{\sidenote}{\footnote}
-% \usepackage{etoolbox}
-% \makeatletter
-% \patchcmd{\@maketitle}{\global\topskip42\p@\relax}
-%   {\global\topskip42\p@\relax \vspace*{-1ex}}
-%   {}{}
-% \makeatother
 \usepackage[backend=biber, style=alphabetic]{biblatex}
-
-\usepackage{enumitem}
-\setlist[enumerate,1]{font=\upshape, label={(\roman*)}}
-
-\crefformat{enumi}{#2\textup{#1}#3}
-\crefrangeformat{enumi}{#3\textup{#1}#4--#5\textup{#2}#6}
-\crefname{equation}{}{}
-\crefrangeformat{equation}{(#3#1#4)--(#5#2#6)}
-
-\newcommand{\creflastconjunction}{, and\nobreakspace}
-
-\newcommand{\step}[1]{\smallskip\noindent\emph{#1}}
-\pagestyle{plain}
-
 \usepackage{import}
 \usepackage{xifthen}
 \usepackage{pdfpages}
@@ -52,3 +22,49 @@
     \def\svgwidth{#1\columnwidth}
     \import{./figures/}{#2.pdf_tex}
 }
+
+\usepackage{cleveref}
+\makeatletter
+\AddToHook{cmd/appendix/before}{\def\cref@section@alias{appendix}\def\cref@subsection@alias{appendix}}
+\makeatother
+\usepackage{enumitem}
+\setlist[enumerate,1]{font=\upshape, label={(\roman*)}}
+
+\crefformat{enumi}{#2\textup{#1}#3}
+\crefrangeformat{enumi}{#3\textup{#1}#4--#5\textup{#2}#6}
+\crefname{equation}{}{}
+\creflabelformat{equation}{(#2#1#3)}
+
+\newcommand{\crefrangeconjunction}{--}
+\newcommand{\creflastconjunction}{, and\nobreakspace}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\AddToHook{env/lemma/begin}{\crefalias{theorem}{lemma}}
+\newtheorem{proposition}[theorem]{Proposition}
+\AddToHook{env/proposition/begin}{\crefalias{theorem}{proposition}}
+\newtheorem{corollary}[theorem]{Corollary}
+\AddToHook{env/corollary/begin}{\crefalias{theorem}{corollary}}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\AddToHook{env/conjecture/begin}{\crefalias{theorem}{conjecture}}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\AddToHook{env/definition/begin}{\crefalias{theorem}{definition}}
+\newtheorem{notation}[theorem]{Notation}
+\AddToHook{env/notation/begin}{\crefalias{theorem}{notation}}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\AddToHook{env/remark/begin}{\crefalias{theorem}{remark}}
+\newtheorem{example}[theorem]{Example}
+\AddToHook{env/example/begin}{\crefalias{theorem}{example}}
+
+\newcommand{\marginnote}{\footnote}
+\newcommand{\sidenote}{\footnote}
+
+\newcommand{\step}[1]{\smallskip\noindent\emph{#1}}
+\pagestyle{plain}
+
+\usepackage{og-math}
