@@ -11,7 +11,7 @@
   bookmarksdepth=3
 }
 \usepackage{amsthm}
-\usepackage[backend=biber, style=alphabetic]{biblatex}
+\usepackage[backend=biber, style=alphabetic, maxalphanames=4, maxbibnames=99]{biblatex}
 \usepackage{import}
 \usepackage{xifthen}
 \usepackage{pdfpages}
@@ -39,27 +39,27 @@
 \newcommand{\creflastconjunction}{, and\nobreakspace}
 
 \theoremstyle{plain}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\AddToHook{env/lemma/begin}{\crefalias{theorem}{lemma}}
-\newtheorem{proposition}[theorem]{Proposition}
-\AddToHook{env/proposition/begin}{\crefalias{theorem}{proposition}}
-\newtheorem{corollary}[theorem]{Corollary}
-\AddToHook{env/corollary/begin}{\crefalias{theorem}{corollary}}
-\newtheorem{conjecture}[theorem]{Conjecture}
-\AddToHook{env/conjecture/begin}{\crefalias{theorem}{conjecture}}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\AddToHook{env/lemma/begin}{\crefalias{thm}{lemma}}
+\newtheorem{proposition}[thm]{Proposition}
+\AddToHook{env/proposition/begin}{\crefalias{thm}{proposition}}
+\newtheorem{corollary}[thm]{Corollary}
+\AddToHook{env/corollary/begin}{\crefalias{thm}{corollary}}
+\newtheorem{conjecture}[thm]{Conjecture}
+\AddToHook{env/conjecture/begin}{\crefalias{thm}{conjecture}}
 
 \theoremstyle{definition}
-\newtheorem{definition}[theorem]{Definition}
-\AddToHook{env/definition/begin}{\crefalias{theorem}{definition}}
-\newtheorem{notation}[theorem]{Notation}
-\AddToHook{env/notation/begin}{\crefalias{theorem}{notation}}
+\newtheorem{definition}[thm]{Definition}
+\AddToHook{env/definition/begin}{\crefalias{thm}{definition}}
+\newtheorem{notation}[thm]{Notation}
+\AddToHook{env/notation/begin}{\crefalias{thm}{notation}}
 
 \theoremstyle{remark}
-\newtheorem{remark}[theorem]{Remark}
-\AddToHook{env/remark/begin}{\crefalias{theorem}{remark}}
-\newtheorem{example}[theorem]{Example}
-\AddToHook{env/example/begin}{\crefalias{theorem}{example}}
+\newtheorem{remark}[thm]{Remark}
+\AddToHook{env/remark/begin}{\crefalias{thm}{remark}}
+\newtheorem{example}[thm]{Example}
+\AddToHook{env/example/begin}{\crefalias{thm}{example}}
 
 \newcommand{\marginnote}{\footnote}
 \newcommand{\sidenote}{\footnote}
@@ -68,3 +68,4 @@
 \pagestyle{plain}
 
 \usepackage{og-math}
+\usepackage{microtype}
